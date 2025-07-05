@@ -1,0 +1,23 @@
+:root {
+	/* Variabel Warna */
+	--color-primary:#369AF9;
+	--color-secondary:#FF862A;
+	--color-black: #000000;
+
+	/* Jenis Font */
+	--font-main:'nunito sans', sans-serif;
+}
+
+* {
+	font-family: var(--font-main);
+}
+
+body {
+	padding: 25px;
+	background-color: var(--color-white);
+}
+
+main {
+	width: 440px;
+	height: 956px;
+}

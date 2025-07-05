@@ -1,3 +1,28 @@
 body {
-    background-color: white;
+    background-color: var(--color-white);
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.button-landingPage {
+    width: 266px;
+    height: 64px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    line-height: 64px; /* Agar teks berada di tengah*/
+    font-size: 24px;
+    box-sizing: content-box;
+    border-radius: 30px;
+    background-color: var(--color-primary);
+}
+
+.button-landingPage.btn:active {
+    outline: 3px solid 	#367ce6;
+    background-color: #71b1ec;
 }
