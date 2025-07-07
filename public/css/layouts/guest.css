@@ -1,7 +1,7 @@
 :root {
 	/* Variabel Warna */
-	--color-primary:#369AF9;
-	--color-secondary:#FF862A;
+	--color-blue-primary:#369AF9;
+	--color-orange-primary:#FF862A;
 	--color-black: #000000;
 
 	/* Jenis Font */
@@ -14,10 +14,17 @@
 
 body {
 	padding: 25px;
-	background-color: var(--color-white);
 }
 
-main {
+.container-mobile {
 	width: 440px;
 	height: 956px;
+}
+
+.text-information {
+	font-size: 18px;
+}
+
+.button-guest {
+	font-size: 22px;
 }

@@ -7,22 +7,25 @@ p {
     margin: 0;
 }
 
-.button-landingPage {
+.button-guest {
+    display: none;
+}
+
+.button-get-strated.btn {
     width: 266px;
     height: 64px;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    text-align: center;
     line-height: 64px; /* Agar teks berada di tengah*/
     font-size: 24px;
     box-sizing: content-box;
     border-radius: 30px;
-    background-color: var(--color-primary);
+    background-color: var(--color-blue-primary);
 }
 
-.button-landingPage.btn:active {
+.button-get-strated.btn:active {
     outline: 3px solid 	#367ce6;
     background-color: #71b1ec;
 }
