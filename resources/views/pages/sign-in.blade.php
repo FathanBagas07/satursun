@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="{{asset('css/pages/sign-in.css')}}">
 @endsection
 
+@section('back link', Route('landing-page'))
+
 @section('information', 'Sign In')
 
 @section('content')
-    <div class="container-sign-in">J
+    <div class="container-sign-in">
+        
     </div>
 @endsection

@@ -19,6 +19,16 @@ body {
 .container-mobile {
 	width: 440px;
 	height: 956px;
+	padding: 15px;
+	background-color: var(--color-blue-primary);
+}
+
+header {
+	height: 200px;
+}
+
+.button-back.btn {
+	background-color: white;
 }
 
 .text-information {

@@ -2,13 +2,8 @@ body {
     background-color: var(--color-white);
 }
 
-p {
-    font-size: 14px;
-    margin: 0;
-}
-
-.button-guest {
-    display: none;
+.container-mobile {
+    background-color: white;
 }
 
 .button-get-strated.btn {
@@ -17,12 +12,14 @@ p {
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
     line-height: 64px; /* Agar teks berada di tengah*/
     font-size: 24px;
-    box-sizing: content-box;
     border-radius: 30px;
     background-color: var(--color-blue-primary);
+}
+
+.button-get-strated.btn:hover {
+    background-color: rgb(42, 119, 190);
 }
 
 .button-get-strated.btn:active {
