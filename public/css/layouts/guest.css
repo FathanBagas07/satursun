@@ -28,7 +28,15 @@ header {
 }
 
 .button-back.btn {
-	background-color: white;
+	background-color: var(--color-blue-primary);
+}
+
+.button-back.btn:hover {
+	background-color: #237ccf;
+}
+
+.button-back.btn.btn-light:active {
+	background-color: #70b1ee;
 }
 
 .text-information {
