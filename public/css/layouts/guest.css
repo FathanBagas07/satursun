@@ -8,10 +8,19 @@
 	--color-orange-secondary:#FF7710;
 	--color-orange-hover:#e97416;
 	--color-orange-active:#cc6600;
-	--color-black: #000000;
+	--color-black-primary: #000000;
+	--color-black-hover: #333333;
+	--color-black-active: #666666;
+	--color-white-primary: #FFFFFF;
+	--color-white-hover: #F0F0F0;
+	--color-white-active: #E0E0E0;
 
 	/* Jenis Font */
 	--font-main:'nunito sans', sans-serif;
+
+	/* Scale */
+	--scale-up: 1.02;
+	--scale-down: 0.98;
 }
 
 * {
@@ -33,16 +42,18 @@ header {
 	height: 200px;
 }
 
-.button-back.btn {
-	background-color: var(--color-blue-primary);
+.button-back {
+	transition: all 0.2s ease-in-out;
 }
 
-.button-back.btn:hover {
-	background-color: #237ccf;
+.button-back:hover {
+	color: var(--color-black-hover);
+	transform: translateX(5px) scale(var(--scale-up));
 }
 
-.button-back.btn.btn-light:active {
-	background-color: #70b1ee;
+.button-back:active {
+	color: var(--color-black-active);
+	transform: translateX(-5px) scale(var(--scale-down));
 }
 
 .text-information {
