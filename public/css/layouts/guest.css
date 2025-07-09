@@ -1,7 +1,13 @@
 :root {
 	/* Variabel Warna */
 	--color-blue-primary:#369AF9;
+	--color-blue-secondary:#285BFF;
+	--color-blue-hover:#3A9DFE;
+	--color-blue-active:#70B1EE;
 	--color-orange-primary:#FF862A;
+	--color-orange-secondary:#FF7710;
+	--color-orange-hover:#e97416;
+	--color-orange-active:#cc6600;
 	--color-black: #000000;
 
 	/* Jenis Font */
@@ -43,6 +49,19 @@ header {
 	font-size: 18px;
 }
 
-.button-guest {
+.button-guest.btn.btn-primary {
+	height: 45px;
 	font-size: 22px;
+	line-height: 45px;
+	background-color: var(--color-orange-primary);
+}
+
+.button-guest.btn.btn-primary:hover {
+	transform: scale(1.02);
+	background-color: var(--color-orange-hover);
+}
+
+.button-guest.btn.btn-primary:active {
+	background-color: var(--color-orange-active);
+	transform: scale(0.98);
 }

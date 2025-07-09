@@ -14,4 +14,5 @@
     <div class="container-sign-in">
         
     </div>
+    @section('text button', 'Sign In')
 @endsection

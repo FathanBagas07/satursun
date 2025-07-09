@@ -11,7 +11,7 @@
     </head>
     <body>
         {{--Untuk membuat UI Mobile--}}
-        <div class="container-mobile d-flex flex-column justify-content-between aligin-items-center mx-auto border border-black rounded-5">
+        <div class="container-mobile d-flex flex-column justify-content-start aligin-items-center mx-auto border border-black rounded-5">
             <header class="header d-flex flex-column justify-content-end align-items-center">
                 @if (Route::currentRouteName() !== 'landing-page')
                     <a class="button-back btn btn-light align-self-start text-black p-0 border-0 mb-auto" href="@yield('back link')" role="button">
@@ -26,9 +26,9 @@
                     <p class="text-information text-center fw-bold">@yield('information')</p>
                 </div>
             </header>
-            <main>
+            <main class="main d-flex flex-column justify-content-start align-items-center">
                 @yield('content')
-                <a class="button-guest btn btn-primary text-black text-center p-0" href="" role="button">@yield('text button')</a>
+                <a class="button-guest btn btn-primary text-black text-center w-100 p-0 fw-bold shadow my-2" href="@yield('button-guest-route')" role="button">@yield('text button')</a>
             </main>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
