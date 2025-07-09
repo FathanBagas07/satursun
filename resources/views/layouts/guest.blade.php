@@ -28,7 +28,7 @@
             </header>
             <main class="main d-flex flex-column justify-content-start align-items-center">
                 @yield('content')
-                <a class="button-guest btn btn-primary text-black text-center w-100 p-0 fw-bold shadow my-2" href="@yield('button-guest-route')" role="button">@yield('text button')</a>
+                <a class="button-guest btn btn-primary text-black text-center w-100 p-0 fw-bold shadow my-2 border-0" href="@yield('button-guest-route')" role="button">@yield('text button')</a>
             </main>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
