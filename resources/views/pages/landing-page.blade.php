@@ -3,6 +3,7 @@
 @section('title', 'Landing Page')
 
 @section('head')
+    @parent
     <link rel="stylesheet" href="{{asset('css/pages/landing-page.css')}}">
 @endsection
 

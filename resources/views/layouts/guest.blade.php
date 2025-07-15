@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
+@section ('title', 'Guest Layout')
+
 @section ('head')
-    <link rel="stylesheet" href="{{asset('css/layouts/guest.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/layouts/guest.css') }}">
 @endsection
 
 @section ('body')

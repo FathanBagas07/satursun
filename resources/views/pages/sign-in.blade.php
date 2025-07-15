@@ -3,6 +3,7 @@
 @section('title', 'Sign In')
 
 @section('head')
+    @parent
     <link rel="stylesheet" href="{{asset('css/pages/sign-in.css')}}">
 @endsection
 
