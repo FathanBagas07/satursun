@@ -23,7 +23,7 @@
                     <p class="text-information text-center fw-bold">@yield('information')</p>
                 </div>
             </header>
-            <main class="position-relative d-flex flex-column justify-content-start align-items-center">
+            <main class="position-relative d-flex flex-column justify-content-start">
                 @yield('content')
                 <a class="button-guest btn btn-primary text-center p-0 fw-bold shadow my-2 border-0" href="@yield('button-guest-route')" role="button">@yield('text button')</a>
             </main>

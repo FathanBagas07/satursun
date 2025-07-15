@@ -1,6 +1,6 @@
 .container-mobile {
-	width: 440px;
-	height: 956px;
+	width: 390px ;
+	height: 844px;
 	padding: 15px;
 	background-color: var(--color-blue-primary);
 }
@@ -32,14 +32,15 @@ header {
 	font-size: 22px;
 	line-height: 45px;
 	background-color: var(--color-orange-primary);
+	transition: var(--transition-all);
 }
 
 .button-guest.btn.btn-primary:hover {
-	transform: var(--scale-up);
+	transform: scale(var(--scale-up));
 	background-color: var(--color-orange-hover);
 }
 
 .button-guest.btn.btn-primary:active {
 	transform: scale(var(--scale-down));
-	
+	background-color: var(--color-orange-active);
 }
