@@ -6,9 +6,10 @@ body {
     background-color: white;
 }
 
-.button-get-strated.btn {
+.button-guest.btn.btn-primary {
     width: 266px;
     height: 64px;
+    position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
@@ -18,11 +19,10 @@ body {
     background-color: var(--color-blue-primary);
 }
 
-.button-get-strated.btn:hover {
-    background-color: rgb(42, 119, 190);
+.button-guest.btn.btn-primary:hover {
+    background-color: var(--color-blue-hover);
 }
 
-.button-get-strated.btn:active {
-    outline: 3px solid 	#367ce6;
-    background-color: #71b1ec;
+.button-guest.btn.btn-primary:active {
+    background-color: var(--color-blue-active);
 }
