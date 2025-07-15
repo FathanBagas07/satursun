@@ -9,7 +9,7 @@
 
 @section('content')
     @section('information', 'Teman Freelance Pemula Akhir Pekan')
-    <img class="get-started img-fluid" src="{{asset('images/get_started.png')}}" alt="#">
+    <img class="get-started rounded-bottom-5" src="{{asset('images/get_started.png')}}" alt="#">
 @endsection
 @section('button-guest-route', Route('sign-in'))
 @section('text button', 'Get Started')

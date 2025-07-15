@@ -3,6 +3,7 @@ body {
 }
 
 .container-mobile {
+    padding: 0;
     background-color: white;
 }
 
