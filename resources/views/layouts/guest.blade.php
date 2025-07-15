@@ -17,7 +17,7 @@
                     </a>
                 @endif
                 <div class='d-flex flex-column align-items-center'>
-                    <img src="images/logo.png" alt="Logo">
+                    <img src="images/logo.svg" alt="Logo">
                     <p class="text-information text-center fw-bold">@yield('information')</p>
                 </div>
             </header>
