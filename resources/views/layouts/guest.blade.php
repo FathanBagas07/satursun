@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="utf-8">
-        <title>@yield('title')</title>
-        <link rel="stylesheet" href="{{asset('css/layouts/guest.css')}}">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">
-        <link rel="icon" type="image/svg+xml" href="{{asset('images/logo.svg')}}">
-        @yield('head')
-    </head>
-    <body>
-        {{--Untuk membuat UI Mobile--}}
+@extends('layouts.app')
+
+@section ('head')
+    <link rel="stylesheet" href="{{asset('css/layouts/guest.css')}}">
+@endsection
+
+@section ('body')
+    {{--Untuk membuat UI Mobile--}}
         <div class="container-mobile d-flex flex-column justify-content-start aligin-items-center mx-auto border border-black rounded-5">
             <header class="header d-flex flex-column justify-content-end align-items-center">
                 @if (Route::currentRouteName() !== 'landing-page')
@@ -26,11 +21,9 @@
                     <p class="text-information text-center fw-bold">@yield('information')</p>
                 </div>
             </header>
-            <main class="main d-flex flex-column justify-content-start align-items-center">
+            <main class="position-relative d-flex flex-column justify-content-start align-items-center">
                 @yield('content')
-                <a class="button-guest btn btn-primary text-black text-center w-100 p-0 fw-bold shadow my-2 border-0" href="@yield('button-guest-route')" role="button">@yield('text button')</a>
+                <a class="button-guest btn btn-primary text-center p-0 fw-bold shadow my-2 border-0" href="@yield('button-guest-route')" role="button">@yield('text button')</a>
             </main>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-</html>
+@endsection

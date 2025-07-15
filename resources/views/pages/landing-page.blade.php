@@ -7,10 +7,8 @@
 @endsection
 
 @section('content')
-    <div class="container-get-started d-flex flex-column justify-content-end align-items-center w-100 h-100">
-        @section('information', 'Teman Freelance Pemula Akhir Pekan')
-        <img class="get-started" src="{{asset('images/get_started.png')}}" alt="#">
-    </div>
+    @section('information', 'Teman Freelance Pemula Akhir Pekan')
+    <img class="get-started img-fluid" src="{{asset('images/get_started.png')}}" alt="#">
 @endsection
 @section('button-guest-route', Route('sign-in'))
 @section('text button', 'Get Started')

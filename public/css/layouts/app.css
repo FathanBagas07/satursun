@@ -1,0 +1,34 @@
+:root {
+	/* Variabel Warna */
+	--color-blue-primary:#369AF9;
+	--color-blue-hover:#1f7bdc;
+	--color-blue-active:#1664b3;
+	--color-orange-primary:#FF862A;
+	--color-orange-secondary:#FF7710;
+	--color-orange-hover:#e97416;
+	--color-orange-active:#cc6600;
+	--color-black-primary: #000000;
+	--color-black-hover: #333333;
+	--color-black-active: #666666;
+	--color-white-primary: #FFFFFF;
+	--color-white-hover: #F0F0F0;
+	--color-white-active: #E0E0E0;
+
+	/* Jenis Font */
+	--font-main:'nunito sans', sans-serif;
+
+	/* Scale */
+	--scale-up: 1.02;
+	--scale-down: 0.98;
+
+	/* Transition */
+	--transition-all: all 0.2s ease-in-out;
+}
+
+* {
+	font-family: var(--font-main);
+}
+
+body {
+	padding: 25px;
+}
