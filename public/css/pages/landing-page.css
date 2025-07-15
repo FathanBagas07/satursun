@@ -21,8 +21,10 @@ body {
 
 .button-guest.btn.btn-primary:hover {
     background-color: var(--color-blue-hover);
+    transform: translateX(-50%);
 }
 
 .button-guest.btn.btn-primary:active {
     background-color: var(--color-blue-active);
+    transform: translateX(-50%);
 }
