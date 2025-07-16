@@ -10,7 +10,7 @@ header {
 }
 
 .button-back {
-	transition: all 0.2s ease-in-out;
+	transition: var(--transition-all);
 }
 
 .button-back:hover {
