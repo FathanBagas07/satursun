@@ -1,0 +1,158 @@
+/* Font & Reset */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand img {
+    height: 44px;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #5c2ec7; /* Ungu dari logo */
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00a8ff, #5c2ec7);
+    border: none;
+    transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-outline-primary {
+    border-color: #5c2ec7;
+    color: #5c2ec7;
+}
+
+.btn-outline-primary:hover {
+    background-color: #5c2ec7;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f5f8ff, #ffffff);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hero h1 {
+    color: #222;
+}
+
+.hero p {
+    color: #555;
+}
+
+.hero-media img {
+    border-radius: 12px;
+}
+
+/* About Section */
+#about {
+    background-color: #f8faff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#about h2 {
+    color: #222;
+}
+
+#about p {
+    color: #555;
+}
+
+/* Feature Cards */
+.feature {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease;
+}
+
+.feature:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.feature h3 {
+    color: #5c2ec7;
+}
+
+/* CTA Banner */
+.bg-primary {
+    background: linear-gradient(90deg, #00a8ff, #5c2ec7) !important;
+}
+
+.bg-primary .btn-light {
+    font-weight: 700;
+}
+
+.bg-primary p {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Accordion FAQ */
+.accordion-button:not(.collapsed) {
+    background-color: #f2f5ff;
+    color: #5c2ec7;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: rgba(255,255,255,0.8);
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+    }
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    #about {
+        text-align: center;
+    }
+}
