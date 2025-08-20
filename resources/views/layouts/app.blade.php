@@ -6,7 +6,8 @@
         <title>@yield('title')</title>
         <link rel="stylesheet" href="{{asset('css/layouts/app.css')}}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="icon" type="image/svg+xml" href="{{asset('images/logo.svg')}}">
         @yield('head')
     </head>
