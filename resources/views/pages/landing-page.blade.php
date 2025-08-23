@@ -4,40 +4,41 @@
 
 @section('head')
     @parent
-    <link rel="stylesheet" href="{{ asset('css/landing-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pages/landing-page.css') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 @endsection
 
 @section('body')
-<main class="landing-page">
+<header>
     {{-- Navbar --}}
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center">
-                    <img src="{{ asset('images/logo.svg') }}" alt="Satursun Logo" height="44">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link" >Tentang</a></li>
-                        <li class="nav-item"><a class="nav-link" >Cara Kerja</a></li>
-                        <li class="nav-item"><a class="nav-link" >FAQ</a></li>
-                        <li class="nav-item ms-3"><a class="btn btn-outline-primary">Daftar</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-primary text-white">Masuk</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            {{-- Logo --}}
+            <a class="navbar-brand d-flex align-items-center">
+                <img src="{{ asset('images/logo.svg') }}" alt="Satursun Logo" height="60">
+            </a>
+            {{-- Navbar Tooggler --}}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {{-- Navbar Collapse --}}
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" >Cara Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" >FAQ</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-primary text-black fw-bold">Daftar</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold">Masuk</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
+<main>
     <!-- HERO -->
     <section class="hero py-5">
         <div class="container">
