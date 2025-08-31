@@ -96,7 +96,7 @@
                 <div class="row g-4 align-items-center d-flex justify-content-between">
                     <!-- Judul kiri -->
                     <div class="col-lg-4 d-flex align-items-center">
-                        <h3 class="section-title fw-bold text-md-start text-center w-100 display-5">
+                        <h3 class="section-title fw-bold text-md-start text-center w-100 display-6">
                             MENGAPA HARUS<br> SATURSUN FREELANCE?
                         </h3>
                     </div>
