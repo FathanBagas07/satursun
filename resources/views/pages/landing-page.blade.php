@@ -69,9 +69,9 @@
                 <!-- Tentang Kami -->
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h6 class="section-subtitle fw-bold text-black display-6">TENTANG KAMI</h6>
-                        <h2 class="section-title fw-bold text-black display-5">SATURSUN FREELANCE</h2>
-                        <p class="about-text mt-3 fw-semibold text-black fs-5">
+                        <h6 class="section-subtitle fw-bold text-black">TENTANG KAMI</h6>
+                        <h2 class="section-title fw-bold text-black">SATURSUN FREELANCE</h2>
+                        <p class="about-text mt-3 fw-semibold text-black">
                             Merupakan platform jasa mikro akhir pekan yang menghubungkan
                             pemberi kerja mikro dengan freelancer terampil, mencakup berbagai kebutuhan
                             seperti jasa kebersihan, pet walker, pengasuh hewan, penjaga stand, desain grafis,
