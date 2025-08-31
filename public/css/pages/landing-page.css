@@ -25,6 +25,9 @@ header {
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /* Logo responsive */
@@ -129,13 +132,13 @@ header .navbar .btn.btn-primary:focus {
 .hero {
     display: flex;
     align-items: center;
+    margin-top: 100px;
 }
 
 .bg-hero {
     background: url("/images/background-hero.png") no-repeat center center;
     background-size: cover;
-      min-height: 80vh;  /* contoh: 80% tinggi layar */
-
+    min-height: 80vh;
 }
 
 .text-stroke {

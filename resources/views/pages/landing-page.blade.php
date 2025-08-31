@@ -69,9 +69,9 @@
                 <!-- Tentang Kami -->
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h6 class="section-subtitle fw-bold text-black">TENTANG KAMI</h6>
-                        <h2 class="section-title fw-bold text-black">SATURSUN FREELANCE</h2>
-                        <p class="about-text mt-3 fw-semibold text-black">
+                        <h6 class="section-subtitle fw-bold text-black display-6">TENTANG KAMI</h6>
+                        <h2 class="section-title fw-bold text-black display-5">SATURSUN FREELANCE</h2>
+                        <p class="about-text mt-3 fw-semibold text-black fs-5">
                             Merupakan platform jasa mikro akhir pekan yang menghubungkan
                             pemberi kerja mikro dengan freelancer terampil, mencakup berbagai kebutuhan
                             seperti jasa kebersihan, pet walker, pengasuh hewan, penjaga stand, desain grafis,
@@ -95,15 +95,15 @@
             <div class="container">
                 <div class="row g-4 align-items-center d-flex justify-content-between">
                     <!-- Judul kiri -->
-                    <div class="col-md-4 d-flex align-items-center">
-                        <h3 class="section-title fw-bold text-md-start text-center w-100">
+                    <div class="col-lg-4 d-flex align-items-center">
+                        <h3 class="section-title fw-bold text-md-start text-center w-100 display-5">
                             MENGAPA HARUS<br> SATURSUN FREELANCE?
                         </h3>
                     </div>
                     <!-- List kanan -->
-                    <div class="col-md-8">
+                    <div class="col-lg-7">
                         <p class="mt-3 mb-0 fw-bold">Di Satursun Freelance Anda bisa: </p>
-                        <ul class="mt-2 fw-bold">
+                        <ul class="mt-2 fw-bold fs-5">
                             <li>Temukan freelancer akhir pekan dengan cepat dan mudah</li>
                             <li>Buat permintaan, terima tawaran dari banyak freelancer</li>
                             <li>Pilih freelancer yang cocok dan dapatkan hasil terbaik</li>
