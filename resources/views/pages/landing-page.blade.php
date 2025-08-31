@@ -36,17 +36,18 @@
 
     <main>
         <!-- HERO -->
-        <section class="hero py-5 text-white">
+        <section class="hero text-white mb-5">
             <div class="container">
-                <div class="row align-items-center gx-5 bg-hero rounded-3">
-                    <div class="col-lg-6 p-5">
-                        <h1 class="display-5 fw-bold">Lebih Fleksibel Jadi Freelancer</h1>
-                        <p class="lead">
+                <div class="row align-items-center bg-hero rounded-5">
+                    <div class="col-md-8 p-5">
+                        <h1 class="display-5 fw-bold text-stroke">Lebih Fleksibel Jadi Freelancer</h1>
+                        <p class="lead pb-lg-4 text-stroke">
                             Cukup Manfaatkan Akhir pekan untuk kerja ringan
                             dan dibayar cepat
                         </p>
 
-                        <p class="lead mt-3">
+                        <h1 class="display-5 fw-bold text-stroke">Lebih Fleksibel Jadi Freelancer</h1>
+                        <p class="lead mt-3 text-stroke">
                             Temukan talenta pemuda/i berbakat <br>
                             Untuk bantu bisnis/pekerjaan Anda dengan biaya terjangkau <br>
                             dan proses instan.

@@ -127,34 +127,25 @@ header .navbar .btn.btn-primary:focus {
 
 /* Hero Section */
 .hero {
-    background: url("/images/background-hero.png") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    min-height: 80vh;
     display: flex;
     align-items: center;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* transparansi */
-}
-
-.hero .container {
-    position: relative;
-    z-index: 1;
 }
 
 .bg-hero {
     background: url("/images/background-hero.png") no-repeat center center;
     background-size: cover;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
+      min-height: 80vh;  /* contoh: 80% tinggi layar */
+
 }
 
+.text-stroke {
+  color: white;
+  text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; /* bayangan di semua sisi */
+}
 
 .btn-daftar {
     background-color: var(--color-blue-primary);
