@@ -195,20 +195,45 @@ header .navbar .btn.btn-primary:focus {
     }
 }
 
-/* Feature Cards */
-.feature {
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: box-shadow 0.2s ease;
+/* Section How It Works */
+.how-it-works {
+    background: linear-gradient(to bottom, #ff33cc, #ffffff 50%, #99ccff);
 }
 
-.feature:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+.how-it-works h2 {
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 40px;
 }
 
-.feature h3 {
-    color: #5c2ec7;
+.how-it-works .feature-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.how-it-works .feature-box:hover {
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+
+.how-it-works i {
+    color: #ff33cc;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.how-it-works h5 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.how-it-works p {
+    font-size: 0.9rem;
+    color: #555;
 }
 
 /* CTA Banner */

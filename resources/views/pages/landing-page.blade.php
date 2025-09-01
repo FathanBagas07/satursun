@@ -116,33 +116,80 @@
             </div>
         </section>
 
-        <!-- HOW IT WORKS / FEATURES -->
-        <section id="how-it-works" class="py-5">
-            <div class="container">
-                <h2 class="h3 text-center mb-4">Cara Kerja</h2>
+        <!-- HOW IT WORKS -->
+        <section id="how-it-works" class="how-it-works mb-5">
+            <div class="container text-center">
+                <img class="img-how-it-works img-fluid rounded-top-4 mb-4"
+                    src="{{ asset('images/satursun-how-it-works.svg') }}" alt="Satursun">
 
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <article class="feature p-4 h-100 border rounded-3">
-                            <h3 class="h5">1. Klien Posting</h3>
-                            <p class="mb-0 text-muted">Klien membuat tugas singkat lengkap dengan deskripsi dan tenggat.</p>
-                        </article>
+                <!-- Untuk Klien -->
+                <h2 class="h4 fw-bold mb-4">CARA KERJA SATURSUN FREELANCE <br> UNTUK <span class="text-dark">KLIEN</span>
+                </h2>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-person-plus fs-2 mb-2"></i>
+                            <h5 class="h6">Registrasi</h5>
+                            <p class="small text-muted">Registrasi sebagai klien untuk mencari jasa yang Anda butuhkan</p>
+                        </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <article class="feature p-4 h-100 border rounded-3">
-                            <h3 class="h5">2. Freelancer Ajukan</h3>
-                            <p class="mb-0 text-muted">Freelancer mengajukan proposal atau hasil kerja untuk
-                                dipertimbangkan.</p>
-                        </article>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-file-earmark-plus fs-2 mb-2"></i>
+                            <h5 class="h6">Posting</h5>
+                            <p class="small text-muted">Posting pekerjaan dengan tarif sesuai agar dapat diterima pekerja
+                            </p>
+                        </div>
                     </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-hourglass-split fs-2 mb-2"></i>
+                            <h5 class="h6">Tunggu</h5>
+                            <p class="small text-muted">Tunggu freelancer mengerjakan tugas yang telah Anda berikan</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-cash-coin fs-2 mb-2"></i>
+                            <h5 class="h6">Bayar</h5>
+                            <p class="small text-muted">Setelah selesai, bayarkan tarif sesuai dengan yang disepakati</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="col-md-4">
-                        <article class="feature p-4 h-100 border rounded-3">
-                            <h3 class="h5">3. Klien Pilih</h3>
-                            <p class="mb-0 text-muted">Klien menilai dan memilih pemenang. Notifikasi dikirimkan pada
-                                pemenang.</p>
-                        </article>
+                <!-- Untuk Freelancer -->
+                <h2 class="h4 fw-bold mb-4">CARA KERJA SATURSUN FREELANCE <br> UNTUK <span
+                        class="text-dark">FREELANCER</span></h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-person-check fs-2 mb-2"></i>
+                            <h5 class="h6">Registrasi</h5>
+                            <p class="small text-muted">Registrasi sebagai freelancer untuk mendapatkan pekerjaan</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-search fs-2 mb-2"></i>
+                            <h5 class="h6">Cari</h5>
+                            <p class="small text-muted">Cari pekerjaan sesuai minat dan bayaran yang tercantum</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-briefcase fs-2 mb-2"></i>
+                            <h5 class="h6">Bekerja</h5>
+                            <p class="small text-muted">Selesaikan pekerjaan yang telah diterima dengan baik</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="p-3">
+                            <i class="bi bi-wallet2 fs-2 mb-2"></i>
+                            <h5 class="h6">Gajian</h5>
+                            <p class="small text-muted">Terima bayaran setelah menyelesaikan pekerjaan</p>
+                        </div>
                     </div>
                 </div>
             </div>
