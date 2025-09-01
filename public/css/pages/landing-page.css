@@ -7,7 +7,11 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 700;
 }
 
@@ -24,7 +28,7 @@ img {
 header {
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 0;
     left: 0;
@@ -94,7 +98,7 @@ header .btn-primary {
 }
 header .btn-primary:hover {
     background-color: var(--color-blue-hover);
-    border-color: #0D9FCF;
+    border-color: #0d9fcf;
 }
 header .navbar .btn.btn-primary:active,
 header .navbar .btn.btn-primary:focus {
@@ -115,9 +119,9 @@ header .navbar .btn.btn-primary:focus {
 
 /* Toggler Button */
 .navbar-toggler {
-    padding: 0.4rem 0.6rem;  
-    font-size: 1.2rem;        
-    border: none;  
+    padding: 0.4rem 0.6rem;
+    font-size: 1.2rem;
+    border: none;
 }
 
 /* Hilangkan efek active Bootstrap */
@@ -142,12 +146,9 @@ header .navbar .btn.btn-primary:focus {
 }
 
 .text-stroke {
-  color: white;
-  text-shadow: 
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black; /* bayangan di semua sisi */
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black; /* bayangan di semua sisi */
 }
 
 .btn-daftar {
@@ -173,7 +174,7 @@ header .navbar .btn.btn-primary:focus {
     background-color: var(--color-blue-primary); /* sesuai request */
 }
 
-.why-choose  .section-title {
+.why-choose .section-title {
     color: var(--color-blue-primary);
 }
 
@@ -182,9 +183,9 @@ header .navbar .btn.btn-primary:focus {
 }
 
 .about-img {
-    max-width: 400px;   
-    width: 100%;        
-    height: auto;      
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
 
 /* Responsive fix untuk why-choose */
@@ -197,31 +198,22 @@ header .navbar .btn.btn-primary:focus {
 
 /* Section How It Works */
 .how-it-works {
-    background: linear-gradient(to bottom, #ff33cc, #ffffff 50%, #99ccff);
+    background: linear-gradient(
+        to bottom,
+        var(--color-pink-primary),
+        #ffffff 50%,
+        #99ccff
+    );
 }
 
-.how-it-works h2 {
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 40px;
+.how-it-works .step-klien i {
+    color: var(--color-blue-primary);
+    font-size: 2.2rem;
+    margin-bottom: 12px;
 }
 
-.how-it-works .feature-box {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-    padding: 20px;
-    transition: all 0.3s ease-in-out;
-    height: 100%;
-}
-
-.how-it-works .feature-box:hover {
-    background: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transform: translateY(-4px);
-}
-
-.how-it-works i {
-    color: #ff33cc;
+.how-it-works .step-freelancer i {
+    color: var(--color-pink-primary);
     font-size: 2.2rem;
     margin-bottom: 12px;
 }
@@ -233,7 +225,8 @@ header .navbar .btn.btn-primary:focus {
 
 .how-it-works p {
     font-size: 0.9rem;
-    color: #555;
+    font-weight: lighter;
+    color: black;
 }
 
 /* CTA Banner */
@@ -246,7 +239,7 @@ header .navbar .btn.btn-primary:focus {
 }
 
 .bg-primary p {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Accordion FAQ */
@@ -261,7 +254,7 @@ footer {
 }
 
 footer a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.2s ease;
 }
 
