@@ -169,11 +169,11 @@ header .navbar .btn.btn-primary:focus {
 }
 
 /* Section About */
-#about {
+.about {
     background-color: var(--color-blue-primary); /* sesuai request */
 }
 
-#why-choose  .section-title {
+.why-choose  .section-title {
     color: var(--color-blue-primary);
 }
 

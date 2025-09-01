@@ -35,9 +35,12 @@
     </header>
 
     <main>
-        <!-- HERO -->
+        {{-- Hero --}}
         <section class="hero text-white mb-5">
             <div class="container">
+                <img class="img-how-it-works img-fluid rounded-top-4 mb-4"
+                    src="{{ asset('images/satursun-how-it-works.svg') }}" alt="Satursun">
+
                 <div class="row align-items-center bg-hero rounded-5">
                     <div class="col-md-8 p-5">
                         <h1 class="display-5 fw-bold text-stroke">Lebih Fleksibel Jadi Freelancer</h1>
@@ -63,12 +66,15 @@
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="py-5 text-white">
+        {{-- About --}}
+        <section id="about" class="about py-5 text-white">
             <div class="container">
-                <!-- Tentang Kami -->
+                {{-- Tentang Kami --}}
                 <div class="row align-items-center">
                     <div class="col-lg-6">
+                        {{-- Image Satursun Freelance  --}}
+                        <img class="img-satursun-about img-fluid rounded-top-4"
+                            src="{{ asset('images/satursun-about.svg') }}" alt="Satursun">
                         <h6 class="section-subtitle fw-bold text-black">TENTANG KAMI</h6>
                         <h2 class="section-title fw-bold text-black">SATURSUN FREELANCE</h2>
                         <p class="about-text mt-3 fw-semibold text-black">
@@ -90,17 +96,17 @@
             </div>
         </section>
 
-        <!-- Why Choose -->
-        <section id="why-choose" class="py-5 bg-white">
+        {{-- Why Choose --}}
+        <section id="why-choose" class="why-choose py-5 bg-white">
             <div class="container">
                 <div class="row g-4 align-items-center d-flex justify-content-between">
-                    <!-- Judul kiri -->
+                    {{-- Judul Kiri --}}
                     <div class="col-lg-4 d-flex align-items-center">
                         <h3 class="section-title fw-bold text-md-start text-center w-100 display-6">
                             MENGAPA HARUS<br> SATURSUN FREELANCE?
                         </h3>
                     </div>
-                    <!-- List kanan -->
+                    {{-- List Kanan --}}
                     <div class="col-lg-7">
                         <p class="mt-3 mb-0 fw-bold">Di Satursun Freelance Anda bisa: </p>
                         <ul class="mt-2 fw-bold fs-5">
@@ -116,13 +122,11 @@
             </div>
         </section>
 
-        <!-- HOW IT WORKS -->
+        {{-- How It Works --}}
         <section id="how-it-works" class="how-it-works mb-5">
             <div class="container text-center">
-                <img class="img-how-it-works img-fluid rounded-top-4 mb-4"
-                    src="{{ asset('images/satursun-how-it-works.svg') }}" alt="Satursun">
 
-                <!-- Untuk Klien -->
+                {{-- Untuk Klien --}}
                 <h2 class="h4 fw-bold mb-4">CARA KERJA SATURSUN FREELANCE <br> UNTUK <span class="text-dark">KLIEN</span>
                 </h2>
 
@@ -158,7 +162,7 @@
                     </div>
                 </div>
 
-                <!-- Untuk Freelancer -->
+                {{-- Untuk Freelancer --}}
                 <h2 class="h4 fw-bold mb-4">CARA KERJA SATURSUN FREELANCE <br> UNTUK <span
                         class="text-dark">FREELANCER</span></h2>
 
@@ -195,7 +199,7 @@
             </div>
         </section>
 
-        <!-- CTA BANNER -->
+        {{-- CTA Banner --}}
         <section class="py-5 bg-primary text-white">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
                 <div>
@@ -208,7 +212,7 @@
             </div>
         </section>
 
-        <!-- FAQ / Footer Summary -->
+        {{-- FAQ --}}
         <section id="faq" class="py-5">
             <div class="container">
                 <div class="row g-4">
@@ -261,7 +265,7 @@
             </div>
         </section>
 
-        <!-- FOOTER -->
+        {{-- Footer --}}
         <footer class="py-4 bg-dark text-white">
             <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div>
