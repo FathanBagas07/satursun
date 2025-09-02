@@ -239,11 +239,11 @@
         </section>
 
         {{-- CTA Banner --}}
-        <section class="py-5 bg-primary text-white">
+        <section class="cta-banner py-5 bg-primary text-white">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
                 <div>
-                    <h3 class="h4 mb-0">Siap memulai project?</h3>
-                    <p class="mb-0 text-white-50">Buat project atau cari talent berbakat sekarang.</p>
+                    <h3 class="h4 mb-0 text-black">Siap memulai project?</h3>
+                    <p class="mb-0 text-black">Buat project atau cari talent berbakat sekarang.</p>
                 </div>
                 <div class="mt-3 mt-md-0">
                     <a class="btn btn-light btn-lg">Start a Project</a>

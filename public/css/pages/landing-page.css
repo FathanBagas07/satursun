@@ -202,7 +202,7 @@ header .navbar .btn.btn-primary:focus {
         to bottom,
         var(--color-pink-primary),
         #ffffff 50%,
-        #99ccff
+        var(--color-blue-primary)
     );
 }
 
@@ -231,15 +231,30 @@ header .navbar .btn.btn-primary:focus {
 
 /* CTA Banner */
 .bg-primary {
-    background: linear-gradient(90deg, #00a8ff, #5c2ec7) !important;
+    background: linear-gradient(
+        to right,
+        var(--color-pink-primary),
+        white 99%
+);
+
 }
 
-.bg-primary .btn-light {
-    font-weight: 700;
-}
-
-.bg-primary p {
+.cta-banner p {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-banner a.btn {
+    border: solid 2px var(--color-blue-hover);
+    background-color: var(--color-blue-primary);
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-banner a.btn:hover {
+    background-color: var(--color-blue-hover);
+    color: #000;
 }
 
 /* Accordion FAQ */
