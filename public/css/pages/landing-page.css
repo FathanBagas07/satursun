@@ -299,35 +299,54 @@ header .navbar .btn.btn-primary:focus {
     border: solid 1px rgba(0,0,0,0.1);
 }
 
-/* Quick Links */
-.faq-section .list-unstyled li {
-    margin-bottom: 10px;
+/* Section Footer */
+.footer-custom {
+    background: #000;
 }
 
-.faq-section .list-unstyled a {
-    color: #0d6efd;
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-pink-primary), var(--color-blue-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-link {
+    color: #bbb;
     text-decoration: none;
-    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-custom a.btn {
+    background-color: var(--color-blue-primary);
     transition: all 0.2s ease-in-out;
 }
 
-.faq-section .list-unstyled a:hover {
-    text-decoration: underline;
-    color: #ff33cc;
+.footer-custom a.btn:hover {
+    background-color: var(--color-blue-hover);
 }
 
-/* Footer */
-footer {
-    font-size: 0.9rem;
+.footer-custom a.btn:active,
+.footer-custom a.btn:focus {
+    background-color: var(--color-blue-active);
 }
 
-footer a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.2s ease;
+.footer-link {
+    color: var(--color-pink-primary);
 }
 
-footer a:hover {
+.footer-link:hover {
+    color: white;
+}
+
+.social-link {
+    font-size: 1.4rem;
     color: #fff;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: var(--color-pink-primary);
 }
 
 /* Responsive */
