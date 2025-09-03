@@ -246,7 +246,7 @@
                     <p class="mb-0 text-black">Buat project atau cari talent berbakat sekarang.</p>
                 </div>
                 <div class="mt-3 mt-md-0">
-                    <a class="btn btn-light btn-lg">Start a Project</a>
+                    <a class="btn btn-light btn-lg border-0">Start a Project</a>
                 </div>
             </div>
         </section>
