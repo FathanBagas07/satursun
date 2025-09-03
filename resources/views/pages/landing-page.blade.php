@@ -252,9 +252,10 @@
         </section>
 
         {{-- FAQ --}}
-        <section id="faq" class="py-5">
+        <section id="faq" class="faq-section">
             <div class="container">
                 <div class="row g-4">
+                    <!-- FAQ -->
                     <div class="col-lg-8">
                         <h4 class="h5">FAQ Singkat</h4>
                         <div class="accordion" id="faqAccordion">
@@ -290,15 +291,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h4 class="h5">Kontak & Quick Links</h4>
-                        <ul class="list-unstyled">
-                            <li><a>Tentang Satursun</a></li>
-                            <li><a>Syarat & Ketentuan</a></li>
-                            <li><a>Kebijakan Privasi</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>

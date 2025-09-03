@@ -257,10 +257,63 @@ header .navbar .btn.btn-primary:focus {
     color: #000;
 }
 
-/* Accordion FAQ */
-.accordion-button:not(.collapsed) {
-    background-color: #f2f5ff;
-    color: #5c2ec7;
+/* Section FAQ */
+.faq-section {
+    background: linear-gradient(to bottom, #f9f9ff, #ffffff);
+    padding: 60px 20px;
+    border-radius: 16px;
+}
+
+/* Judul FAQ */
+.faq-section h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Accordion Styling */
+.faq-section .accordion-item {
+    border: none;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.faq-section .accordion-button {
+    background: var(--color-blue-primary);
+    font-weight: 600;
+    color: black;
+    padding: 15px 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
+}
+
+.faq-section .accordion-body {
+    background: #ffffff;
+    padding: 20px;
+    font-size: 0.95rem;
+    color: black;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+
+/* Quick Links */
+.faq-section .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.faq-section .list-unstyled a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.faq-section .list-unstyled a:hover {
+    text-decoration: underline;
+    color: #ff33cc;
 }
 
 /* Footer */
