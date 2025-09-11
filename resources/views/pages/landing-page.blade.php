@@ -26,7 +26,7 @@
                         <li class="nav-item"><a class="nav-link" href="">Tentang</a></li>
                         <li class="nav-item"><a class="nav-link">Cara Kerja</a></li>
                         <li class="nav-item"><a class="nav-link">FAQ</a></li>
-                        <li class="nav-item ms-3"><a class="btn btn-outline-primary text-black fw-bold">Daftar</a></li>
+                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold">Daftar</a></li>
                         <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold">Masuk</a></li>
                     </ul>
                 </div>
