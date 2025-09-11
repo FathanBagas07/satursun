@@ -12,7 +12,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 {{-- Logo --}}
-                <a class="navbar-brand d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="#hero">
                     <img src="{{ asset('images/logo.svg') }}" alt="Satursun Logo" height="60">
                 </a>
                 {{-- Navbar Tooggler --}}
@@ -23,11 +23,11 @@
                 {{-- Navbar Collapse --}}
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link" href="">Tentang</a></li>
-                        <li class="nav-item"><a class="nav-link">Cara Kerja</a></li>
-                        <li class="nav-item"><a class="nav-link">FAQ</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold">Daftar</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold">Masuk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#how-it-works">Cara Kerja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="">Daftar</a></li>
+                        <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +36,7 @@
 
     <main>
         {{-- Hero --}}
-        <section class="hero text-white mb-5">
+        <section id="hero" class="hero text-white mb-5">
             <div class="container">
                 <div class="row align-items-center bg-hero rounded-5">
                     <div class="col-md-8 p-5">
@@ -255,7 +255,7 @@
         <section id="faq" class="faq-section">
             <div class="container">
                 <div class="row g-4">
-                    <!-- FAQ -->
+                    {{-- FAQ --}}
                     <div class="col-lg-8">
                         <h4 class="h5">FAQ Singkat</h4>
                         <div class="accordion" id="faqAccordion">
@@ -335,19 +335,19 @@
                             <div class="col-6">
                                 <h6 class="fw-bold">Quick Links</h6>
                                 <ul class="list-unstyled">
-                                    <li><a href="#" class="footer-link">Tentang</a></li>
-                                    <li><a href="#" class="footer-link">Cara Kerja</a></li>
-                                    <li><a href="#" class="footer-link">FAQ</a></li>
+                                    <li><a href="#about" class="footer-link">Tentang</a></li>
+                                    <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
+                                    <li><a href="#faq" class="footer-link">FAQ</a></li>
                                     <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
-                                            class="footer-link">Masuk</a></li>
+                                            class="footer-link" href="#">Masuk</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
                                 <h6 class="fw-bold">Follow us on</h6>
                                 <div class="d-flex gap-3">
-                                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                                    <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
-                                    <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                                    <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="><i class="bi bi-instagram"></i></a>
+                                    <a class="social-link" href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1"><i class="bi bi-tiktok"></i></a>
+                                    <a class="social-link" ><i class="bi bi-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
