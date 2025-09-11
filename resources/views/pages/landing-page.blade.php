@@ -66,9 +66,9 @@
         {{-- About --}}
         <section id="about" class="about py-5 text-white">
             <div class="container">
-                {{-- Tentang Kami --}}
+                {{-- About Us --}}
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 ">
                         {{-- Image Satursun Freelance  --}}
                         <img class="img-satursun-about img-fluid rounded-top-4"
                             src="{{ asset('images/satursun-about.svg') }}" alt="Satursun">
