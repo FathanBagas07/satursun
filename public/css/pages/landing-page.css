@@ -137,6 +137,7 @@ header .navbar .btn.btn-primary:focus {
     display: flex;
     align-items: center;
     margin-top: 100px;
+    scroll-margin-top: 100px;
 }
 
 .bg-hero {
@@ -171,7 +172,8 @@ header .navbar .btn.btn-primary:focus {
 
 /* Section About */
 .about {
-    background-color: var(--color-blue-primary); /* sesuai request */
+    background-color: var(--color-blue-primary);
+    scroll-margin-top: 100px;
 }
 
 .why-choose .section-title {
@@ -204,6 +206,7 @@ header .navbar .btn.btn-primary:focus {
         #ffffff 50%,
         var(--color-blue-primary)
     );
+    scroll-margin-top: 100px;
 }
 
 .how-it-works .step-klien i {
@@ -269,6 +272,7 @@ header .navbar .btn.btn-primary:focus {
     font-weight: 700;
     margin-bottom: 20px;
     color: #111;
+    scroll-margin-top: 100px;
 }
 
 /* Accordion Styling */
