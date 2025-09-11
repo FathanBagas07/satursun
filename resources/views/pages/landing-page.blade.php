@@ -300,38 +300,46 @@
         <footer class="footer-custom text-white py-5">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- Logo & CTA -->
+                    {{-- Logo & CTA --}}
                     <div class="col-lg-4">
-                        <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3" style="max-height: 120px">
+                        <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3"
+                            style="max-height: 120px">
                         <h5 class="fw-bold text-gradient display-5">READY TO <br> START A PROJECT?</h5>
-                        <a href="#" class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
+                        <a href="#"
+                            class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
                             <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                         </a>
                     </div>
 
-                    <!-- Alamat -->
+                    {{-- Address --}}
                     <div class="col-lg-4">
-                        <p class="mb-2">
-                            <i class="bi bi-geo-alt-fill me-2"></i>
-                            Kampus USU, Jl. Almamater, Padang Bulan, Kec. Medan Baru, Kota Medan, Sumatera Utara 20155
-                        </p>
-                        <p class="mb-0">
-                            <i class="bi bi-envelope-fill me-2"></i>
-                            satursunproject@gmail.com
-                        </p>
+                        {{-- Location --}}
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="bi bi-geo-alt-fill me-2 fs-5"></i>
+                            <span>
+                                Kampus USU, Jl. Almamater, Padang Bulan,
+                                Kec. Medan Baru, Kota Medan, Sumatera Utara 20155
+                            </span>
+                        </div>
+
+                        {{-- Email --}}
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill me-2 fs-5"></i>
+                            <span>satursunproject@gmail.com</span>
+                        </div>
                     </div>
 
-                    <!-- Quick Links & Social -->
+                    {{-- Quick Links & Social --}}
                     <div class="col-lg-4">
                         <div class="row">
                             <div class="col-6">
                                 <h6 class="fw-bold">Quick Links</h6>
                                 <ul class="list-unstyled">
-                                    <li><a href="#" class="footer-link">Beranda</a></li>
                                     <li><a href="#" class="footer-link">Tentang</a></li>
                                     <li><a href="#" class="footer-link">Cara Kerja</a></li>
-                                    <li><a href="#" class="footer-link">Pelatihan</a></li>
-                                    <li><a href="#" class="footer-link">Masuk</a></li>
+                                    <li><a href="#" class="footer-link">FAQ</a></li>
+                                    <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
+                                            class="footer-link">Masuk</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
