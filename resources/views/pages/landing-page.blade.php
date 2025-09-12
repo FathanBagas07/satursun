@@ -198,9 +198,9 @@
                             <div class="col-6">
                                 <h6 class="fw-bold">Follow us on</h6>
                                 <div class="d-flex gap-3">
-                                    <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="><i class="bi bi-instagram"></i></a>
-                                    <a class="social-link" href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1"><i class="bi bi-tiktok"></i></a>
-                                    <a class="social-link" href="https://youtube.com/@satursunproject?si=1IqzQeVZPp8MPDV1"><i class="bi bi-youtube"></i></a>
+                                    <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ==" target="blank"><i class="bi bi-instagram"></i></a>
+                                    <a class="social-link" href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1" target="blank"><i class="bi bi-tiktok"></i></a>
+                                    <a class="social-link" href="https://youtube.com/@satursunproject?si=1IqzQeVZPp8MPDV1" target="blank"><i class="bi bi-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
