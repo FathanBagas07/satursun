@@ -26,7 +26,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
                         <li class="nav-item"><a class="nav-link" href="#how-it-works">Cara Kerja</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in') }}">Daftar</a></li>
+                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in-page') }}">Daftar</a></li>
                         <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li>
                     </ul>
                 </div>
