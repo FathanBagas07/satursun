@@ -9,5 +9,5 @@ Route::get('/', function () {
 
 // Sign-in page
 Route::get('/sign-in', function () {
-    return view('pages/sign-in');
+    return view('pages/auth');
 })->name('sign-in-page');
