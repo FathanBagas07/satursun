@@ -3,7 +3,7 @@
 @section('title', 'Satursun: Platform Freelance untuk Mahasiswa')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/pages/landing-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pages/landing.css') }}">
 @endpush
 
 @section('body')
@@ -26,7 +26,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
                         <li class="nav-item"><a class="nav-link" href="#how-it-works">Cara Kerja</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="">Daftar</a></li>
+                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in') }}">Daftar</a></li>
                         <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li>
                     </ul>
                 </div>
@@ -122,8 +122,8 @@
         {{-- How It Works --}}
         <section id="how-it-works" class="how-it-works mb-5">
             <div class="container text-center py-5">
-                @include('components.how-it-works-klien')
-                @include('components.how-it-works-freelancer')
+                @include('components.landing.how-it-works-klien')
+                @include('components.landing.how-it-works-freelancer')
             </div>
         </section>
 
@@ -144,7 +144,7 @@
         <section id="faq" class="faq-section">
             <div class="container">
                 <div class="row g-4">
-                    @include('components.faq')
+                    @include('components.landing.faq')
                 </div>
             </div>
         </section>
