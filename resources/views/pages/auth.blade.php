@@ -19,9 +19,9 @@
     </header>
 
     {{-- Content --}}
-    <section class="auth-page d-flex align-items-center justify-content-center min-vh-100 position-relative">
-        <div class="content">
-            <img src="{{ asset('images/logo.png') }}" alt="Satursun Logo" class="mb-3" style="max-height: 60px;">
+    <main>
+        <div class="container d-flex align-items-center justify-content-center min-vh-100 position-relative">
+            {{-- Card --}}
             <div class="card shadow-lg border-0" style="max-width: 500px; width: 100%; border-radius: 16px;">
                 <main class="card-body text-center p-4">
                     <h4 class="fw-bold mb-4">Daftar di Satursun</h4>
@@ -61,5 +61,40 @@
                 </main>
             </div>
         </div>
-    </section>
+    </main>
+
+    {{-- Footer --}}
+    <footer class="footer-custom text-white py-3">
+        <div class="container">
+            <div class="social-wrapper text-center">
+                {{-- Social Media --}}
+                <div class="d-flex flex-column align-items-center gap-3">
+                    <h6 class="fw-bold">Follow us on</h6>
+                    <div class="d-flex flex-wrap justify-content-center gap-4 gap-md-5">
+                        {{-- Instagram --}}
+                        <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="
+                            target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        {{-- TikTok --}}
+                        <a class="social-link" href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1"
+                            target="_blank">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        {{-- YouTube --}}
+                        <a class="social-link" href="https://youtube.com/@satursunproject?si=1IqzQeVZPp8MPDV1"
+                            target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Copyright Notice --}}
+        <div class="my-3 text-center small text-secondary">
+            &copy; {{ date('Y') }} Satursun Freelance | All Rights Reserved
+        </div>
+        </div>
+    </footer>
 @endsection

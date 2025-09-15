@@ -1,5 +1,6 @@
-/* Shape */
-section.auth-page::after {
+/* === Body Style === */
+/* Shape Background*/
+body::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -10,14 +11,17 @@ section.auth-page::after {
     border-top-left-radius: 200px;
     border-top-right-radius: 50px;
 
-    /* miring */
+    /* slanted effect */
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
     z-index: 1;
 }
 
-section.auth-page .content {
+/* so as not to be crushed */
+header,
+main,
+footer {
     position: relative;
-    z-index: 2; /* konten tetap di atas background */
+    z-index: 2;
 }
 
 /* === Header Style === */
@@ -46,6 +50,7 @@ header {
     }
 }
 
+/* === Main Style === */
 .input-sign-in {
     height: 44px;
     padding: 2px 15px;
@@ -80,4 +85,28 @@ a .btn-text {
     justify-self: center;
 }
 
+/* === Footer Style === */
+.footer-custom {
+    background: #000;
+}
 
+.footer-custom h6 {
+    font-size: 25px;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--color-pink-primary);
+    transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+    .social-link {
+        font-size: 1.5rem; /* kecilkan sedikit di HP */
+    }
+}
