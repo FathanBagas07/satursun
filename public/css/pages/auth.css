@@ -26,19 +26,12 @@ footer {
 
 /* === Header Style === */
 header {
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 100;
 }
 
 /* Logo responsive */
 .navbar-brand img {
-    max-height: 100px;
-    height: 80px;
+    height: 60px;
     width: auto;
     object-fit: contain;
 }
@@ -51,45 +44,16 @@ header {
 }
 
 /* === Main Style === */
-.input-sign-in {
-    height: 44px;
-    padding: 2px 15px;
-    margin-bottom: 37px;
+main div.container {
+    padding-top: 80px;
 }
 
-.auth-shape {
-    z-index: 1;
-}
-
-span.line {
-    height: 1px;
-}
-
-.container-sign-in a.btn {
-    margin-bottom: 15px;
-    height: 44px;
-}
-
-a.btn.btn-light {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    transition: var(--transition-all);
-}
-
-a img {
-    width: 24px;
-    height: 24px;
-}
-
-a .btn-text {
-    justify-self: center;
+/* == Card Style == */
+main div.card {
+    max-width: 500px;
 }
 
 /* === Footer Style === */
-.footer-custom {
-    background: #000;
-}
-
 .footer-custom h6 {
     font-size: 25px;
 }
