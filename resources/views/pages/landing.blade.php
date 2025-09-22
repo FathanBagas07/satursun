@@ -26,8 +26,8 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
                         <li class="nav-item"><a class="nav-link" href="#how-it-works">Cara Kerja</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in-page') }}">Daftar</a></li>
-                        <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li>
+                        {{-- <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in-page') }}">Daftar</a></li> --}}
+                        {{-- <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li> --}}
                     </ul>
                 </div>
             </div>
@@ -53,11 +53,11 @@
                             dan proses instan.
                         </p>
 
-                        <div class="d-flex mt-4">
+                        {{-- <div class="d-flex mt-4">
                             <a class="btn btn-daftar btn-lg">
                                 <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -72,6 +72,7 @@
                         {{-- Image Satursun Freelance  --}}
                         <img class="img-satursun-about img-fluid rounded-top-4"
                             src="{{ asset('images/satursun-about.svg') }}" alt="Satursun">
+                        {{-- Text About Us --}}
                         <h6 class="section-subtitle fw-bold text-black">TENTANG KAMI</h6>
                         <h2 class="section-title fw-bold text-black">SATURSUN FREELANCE</h2>
                         <p class="about-text mt-3 fw-semibold text-black">
@@ -84,7 +85,7 @@
                             sistem pembayaran aman dan instan.
                         </p>
                     </div>
-                    {{-- Image About --}}
+                    {{-- Image About Us--}}
                     <div class="col-lg-6 text-center">
                         <img src="{{ asset('images/image-about.png') }}" alt="Satursun About"
                             class="img-fluid rounded shadow about-img">
@@ -97,13 +98,13 @@
         <section id="why-choose" class="why-choose py-5 bg-white">
             <div class="container">
                 <div class="row g-4 align-items-center d-flex justify-content-between">
-                    {{-- Judul Kiri --}}
+                    {{-- Left Title --}}
                     <div class="col-lg-4 d-flex align-items-center">
                         <h3 class="section-title fw-bold text-md-start text-center w-100 display-6">
                             MENGAPA HARUS<br> SATURSUN FREELANCE?
                         </h3>
                     </div>
-                    {{-- List Kanan --}}
+                    {{-- Right List --}}
                     <div class="col-lg-7">
                         <p class="mt-3 mb-0 fw-bold">Di Satursun Freelance Anda bisa: </p>
                         <ul class="mt-2 fw-bold fs-5">
@@ -134,13 +135,13 @@
                     <h3 class="h4 mb-0 text-black">Siap memulai project?</h3>
                     <p class="mb-0 text-black">Buat project atau cari talent berbakat sekarang.</p>
                 </div>
-                <div class="mt-3 mt-md-0">
+                {{-- <div class="mt-3 mt-md-0">
                     <a class="btn btn-light btn-lg border-0">Start a Project</a>
-                </div>
+                </div> --}}
             </div>
         </section>
 
-        {{-- FAQ Section--}}
+        {{-- FAQ --}}
         <section id="faq" class="faq-section">
             <div class="container">
                 <div class="row g-4">
@@ -158,10 +159,10 @@
                         <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3"
                             style="max-height: 120px">
                         <h5 class="fw-bold text-gradient display-5">READY TO <br> START A PROJECT?</h5>
-                        <a href="#"
+                        {{-- <a href="#"
                             class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
                             <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
-                        </a>
+                        </a> --}}
                     </div>
 
                     {{-- Address --}}
@@ -191,11 +192,12 @@
                                     <li><a href="#about" class="footer-link">Tentang</a></li>
                                     <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
                                     <li><a href="#faq" class="footer-link">FAQ</a></li>
-                                    <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
-                                            class="footer-link" href="#">Masuk</a></li>
+                                    {{-- <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
+                                            class="footer-link" href="#">Masuk</a></li> --}}
                                 </ul>
                             </div>
                             <div class="col-6">
+                                {{-- Media Social --}}
                                 <h6 class="fw-bold">Follow us on</h6>
                                 <div class="d-flex gap-3">
                                     <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ==" target="blank"><i class="bi bi-instagram"></i></a>
@@ -210,7 +212,7 @@
                 <hr class="border-secondary my-4">
 
                 <div class="text-center small text-secondary">
-                    &copy; {{ date('Y') }} Satursun Freelance | All Rights Reserved
+                    &copy; {{ date('Y') }} Satursun Freelance | Hak Cipta Dilindungi Undang-Undang
                 </div>
             </div>
         </footer>
