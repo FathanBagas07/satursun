@@ -26,8 +26,8 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
                         <li class="nav-item"><a class="nav-link" href="#how-it-works">Cara Kerja</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        {{-- <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in-page') }}">Daftar</a></li> --}}
-                        {{-- <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li> --}}
+                        <li class="nav-item ms-2"><a class="btn btn-outline-primary text-black fw-bold" href="{{ route('sign-in-page') }}">Daftar</a></li>
+                        <li class="nav-item ms-2"><a class="btn btn-primary text-black fw-bold" href="">Masuk</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,18 +46,17 @@
                             dan dibayar cepat
                         </p>
 
-                        <h1 class="display-5 fw-bold text-stroke">Lebih Fleksibel Jadi Freelancer</h1>
+                        <h1 class="display-5 fw-bold text-stroke">Temukan talenta pemuda/i berbakat</h1>
                         <p class="lead mt-3 text-stroke">
-                            Temukan talenta pemuda/i berbakat <br>
                             Untuk bantu bisnis/pekerjaan Anda dengan biaya terjangkau <br>
                             dan proses instan.
                         </p>
 
-                        {{-- <div class="d-flex mt-4">
+                        <div class="d-flex mt-4">
                             <a class="btn btn-daftar btn-lg">
                                 <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                             </a>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,9 +134,9 @@
                     <h3 class="h4 mb-0 text-black">Siap memulai project?</h3>
                     <p class="mb-0 text-black">Buat project atau cari talent berbakat sekarang.</p>
                 </div>
-                {{-- <div class="mt-3 mt-md-0">
+                <div class="mt-3 mt-md-0">
                     <a class="btn btn-light btn-lg border-0">Start a Project</a>
-                </div> --}}
+                </div>
             </div>
         </section>
 
@@ -149,8 +148,9 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        {{-- Footer --}}
+    {{-- Footer --}}
         <footer class="footer-custom text-white py-5">
             <div class="container">
                 <div class="row gy-4">
@@ -159,10 +159,10 @@
                         <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3"
                             style="max-height: 120px">
                         <h5 class="fw-bold text-gradient display-5">READY TO <br> START A PROJECT?</h5>
-                        {{-- <a href="#"
+                        <a href="#"
                             class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
                             <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
-                        </a> --}}
+                        </a>
                     </div>
 
                     {{-- Address --}}
@@ -179,7 +179,7 @@
                         {{-- Email --}}
                         <div class="d-flex align-items-center">
                             <i class="bi bi-envelope-fill me-2 fs-5"></i>
-                            <span>satursunproject@gmail.com</span>
+                            <a class="text-white" href="mailto:tanya@satursun.co.id"><span>tanya@satursun.co.id</span></a>
                         </div>
                     </div>
 
@@ -192,8 +192,8 @@
                                     <li><a href="#about" class="footer-link">Tentang</a></li>
                                     <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
                                     <li><a href="#faq" class="footer-link">FAQ</a></li>
-                                    {{-- <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
-                                            class="footer-link" href="#">Masuk</a></li> --}}
+                                    <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
+                                            class="footer-link" href="#">Masuk</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
@@ -216,5 +216,4 @@
                 </div>
             </div>
         </footer>
-    </main>
 @endsection
