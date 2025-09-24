@@ -1,10 +1,6 @@
 /* Font & Reset */
 body {
     line-height: 1.6;
-    color: #222;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
 h1,
@@ -13,10 +9,6 @@ h3,
 h4,
 h5 {
     font-weight: 700;
-}
-
-a {
-    text-decoration: none;
 }
 
 img {
@@ -138,7 +130,7 @@ header .navbar .btn.btn-primary:focus {
     display: flex;
     align-items: center;
     margin-top: 100px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 90px;
 }
 
 .bg-hero {
@@ -174,7 +166,7 @@ header .navbar .btn.btn-primary:focus {
 /* Section About */
 .about {
     background-color: var(--color-blue-primary);
-    scroll-margin-top: 100px;
+    scroll-margin-top: 90px;
 }
 
 .why-choose .section-title {
@@ -269,11 +261,14 @@ header .navbar .btn.btn-primary:focus {
 }
 
 /* Judul FAQ */
+.faq-section {
+    scroll-margin-top: 70px;
+}
+
 .faq-section h4 {
     font-weight: 700;
     margin-bottom: 20px;
     color: #111;
-    scroll-margin-top: 100px;
 }
 
 /* Accordion Styling */
