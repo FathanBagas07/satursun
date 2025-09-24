@@ -153,7 +153,7 @@
                         </p>
 
                         <div class="d-flex mt-4">
-                            <a class="btn btn-daftar btn-lg">
+                            <a class="btn btn-daftar btn-lg" href="{{ route('auth.choose') }}">
                                 <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                             </a>
                         </div>
@@ -220,31 +220,21 @@
             </div>
         </section>
 
-        {{-- Why Choose --}}
-        <section id="why-choose" class="why-choose py-5 bg-white">
-            <div class="container">
-                <div class="row g-4 align-items-center d-flex justify-content-between">
-                    {{-- Judul Kiri --}}
-                    <div class="col-lg-4 d-flex align-items-center">
-                        <h3 class="section-title fw-bold text-md-start text-center w-100 display-6">
-                            MENGAPA HARUS<br> SATURSUN FREELANCE?
-                        </h3>
-                    </div>
-                    {{-- List Kanan --}}
-                    <div class="col-lg-7">
-                        <p class="mt-3 mb-0 fw-bold">Di Satursun Freelance Anda bisa: </p>
-                        <ul class="mt-2 fw-bold fs-5">
-                            <li>Temukan freelancer akhir pekan dengan cepat dan mudah</li>
-                            <li>Buat permintaan, terima tawaran dari banyak freelancer</li>
-                            <li>Pilih freelancer yang cocok dan dapatkan hasil terbaik</li>
-                            <li>Satu harga, berbagai pilihan layanan mikro</li>
-                            <li>Transaksi aman, pembayaran instan via e-wallet atau transfer bank</li>
-                        </ul>
-                        <p class="mt-3 mb-0 fw-semibold">Tunggu apa lagi? Satursun–in aja!</p>
+        {{-- CTA Banner --}}
+        <section class="cta-banner py-5 bg-primary text-white">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <div>
+                    <h3 class="h4 mb-0 text-black">Siap memulai project?</h3>
+                    <p class="mb-0 text-black">Buat project atau cari talent berbakat sekarang.</p>
+                </div>
+                <div class="mt-3 mt-md-0">
+                    <div class="mt-3 mt-md-0">
+                        <a href="{{route('auth.choose')}}" class="btn btn-light btn-lg border-0">Mulai Proyek</a>
                     </div>
                 </div>
             </div>
         </section>
+
         {{-- FAQ --}}
         <section id="faq" class="faq-section">
             <div class="container">
@@ -264,64 +254,66 @@
                     <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3"
                         style="max-height: 120px">
                     <h5 class="fw-bold text-gradient display-5">READY TO <br> START A PROJECT?</h5>
-                    <a href="#"
+                    <a href="{{ route('auth.choose') }}"
                         class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
                         <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                     </a>
                 </div>
 
-                {{-- FAQ Section --}}
-                <section id="faq" class="faq-section">
-                    <div class="container">
-                        <div class="row g-4">
-                            @include('components.landing.faq')
+                {{-- Address --}}
+                <div class="col-lg-4">
+                    {{-- Location --}}
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="bi bi-geo-alt-fill me-2 fs-5"></i>
+                        <span>
+                            Kampus USU, Jl. Almamater, Padang Bulan,
+                            Kec. Medan Baru, Kota Medan, Sumatera Utara 20155
+                        </span>
+                    </div>
+
+                    {{-- Email --}}
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-envelope-fill me-2 fs-5"></i>
+                        <a class="text-white" href="mailto:tanya@satursun.co.id"><span>tanya@satursun.co.id</span></a>
+                    </div>
+                </div>
+
+                {{-- Quick Links & Social --}}
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="fw-bold">Quick Links</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#about" class="footer-link">Tentang</a></li>
+                                <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
+                                <li><a href="#faq" class="footer-link">FAQ</a></li>
+                                <li><a href="{{route('auth.choose')}}" class="footer-link">Daftar</a><span> / </span><a href="{{ route('login') }}"
+                                        class="footer-link">Masuk</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            {{-- Media Social --}}
+                            <h6 class="fw-bold">Follow us on</h6>
+                            <div class="d-flex gap-3">
+                                <a class="social-link"
+                                    href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="
+                                    target="blank"><i class="bi bi-instagram"></i></a>
+                                <a class="social-link"
+                                    href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1"
+                                    target="blank"><i class="bi bi-tiktok"></i></a>
+                                <a class="social-link" href="https://youtube.com/@satursunproject?si=1IqzQeVZPp8MPDV1"
+                                    target="blank"><i class="bi bi-youtube"></i></a>
+                            </div>
                         </div>
                     </div>
-                </section>
-                {{-- Email --}}
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-envelope-fill me-2 fs-5"></i>
-                    <a class="text-white" href="mailto:tanya@satursun.co.id"><span>tanya@satursun.co.id</span></a>
                 </div>
             </div>
 
-            {{-- Quick Links & Social --}}
-            <div class="col-lg-4">
-                <div class="row">
-                    <div class="col-6">
-                        <h6 class="fw-bold">Quick Links</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#about" class="footer-link">Tentang</a></li>
-                            <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
-                            <li><a href="#faq" class="footer-link">FAQ</a></li>
-                            <li><a href="#" class="footer-link">Daftar</a><span> / </span><a href="#"
-                                    class="footer-link" href="#">Masuk</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        {{-- Media Social --}}
-                        <h6 class="fw-bold">Follow us on</h6>
-                        <div class="d-flex gap-3">
-                            <a class="social-link"
-                                href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="
-                                target="blank"><i class="bi bi-instagram"></i></a>
-                            <a class="social-link" href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1"
-                                target="blank"><i class="bi bi-tiktok"></i></a>
-                            <a class="social-link" href="https://youtube.com/@satursunproject?si=1IqzQeVZPp8MPDV1"
-                                target="blank"><i class="bi bi-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <hr class="border-secondary my-4">
+
+            <div class="text-center small text-secondary">
+                &copy; {{ date('Y') }} Satursun Freelance | Hak Cipta Dilindungi Undang-Undang
             </div>
-        </div>
-        </div>
-
-        <hr class="border-secondary my-4">
-
-
-        <div class="text-center small text-secondary">
-            &copy; {{ date('Y') }} Satursun Freelance | Hak Cipta Dilindungi Undang-Undang
-        </div>
         </div>
     </footer>
 @endsection
