@@ -1,0 +1,40 @@
+:root {
+    /* Variabel Warna */
+    --color-blue-primary: #0fb2e7;
+    --color-blue-hover: #0c9bcc;
+    --color-blue-active: #0a7ea8;
+    --color-pink-primary: #ff01e1;
+    --color-pink-secondary: #ff66f2;
+    --color-pink-hover: #e600c2;
+    --color-pink-active: #b30091;
+    --color-black-primary: #000000;
+    --color-black-hover: #333333;
+    --color-black-active: #666666;
+    --color-white-primary: #ffffff;
+    --color-white-hover: #f0f0f0;
+    --color-white-active: #e0e0e0;
+
+    /* Jenis Font */
+    --font-main: "DM Sans", sans-serif;
+
+    /* Scale */
+    --scale-up: 1.02;
+    --scale-down: 0.98;
+
+    /* Transition */
+    --transition-all: all 0.2s ease-in-out;
+}
+
+* {
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}

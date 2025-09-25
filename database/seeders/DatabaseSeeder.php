@@ -3,21 +3,43 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\JobListing;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $poster = User::firstOrCreate(
+            ['email' => 'poster@satursun.test'],
+            ['name' => 'Demo Poster', 'password' => Hash::make('password'), 'role' => 'poster']
+        );
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        $freel = User::firstOrCreate(
+            ['email' => 'freelancer@satursun.test'],
+            ['name' => 'Demo Freelancer', 'password' => Hash::make('password'), 'role' => 'freelancer']
+        );
+
+        JobListing::factory()
+            ->count(3)
+            ->state(['poster_id' => $poster->id]) // pakai poster yang barusan dibuat
+            ->create();
+
+
+        JobListing::factory()->count(0); // jika pakai factory
+
+        foreach (
+            [
+                ['title' => 'Landing Page Company', 'description' => 'Build LP Tailwind', 'location' => 'Remote'],
+                ['title' => 'Logo & Brand Guide',   'description' => 'Logo + basic guideline', 'location' => 'Remote'],
+                ['title' => 'REST API Laravel',     'description' => 'CRUD + Auth', 'location' => 'Remote'],
+            ] as $j
+        ) {
+            JobListing::create($j + [
+                'poster_id' => $poster->id,
+                'status' => 'open',
+            ]);
+        }
     }
 }

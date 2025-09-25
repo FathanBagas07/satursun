@@ -1,0 +1,364 @@
+/* Font & Reset */
+body {
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === Navbar Satursun Style === */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo responsive */
+.navbar-brand img {
+    max-height: 70px;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Reponsive Mobile */
+@media (max-width: 768px) {
+    header .navbar-brand img {
+        max-height: 45px;
+    }
+}
+
+/* Navbar item umum */
+header .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin: 0 8px;
+    transition: all 0.2s ease-in-out;
+}
+header .nav-link:hover {
+    color: #000000;
+}
+
+/* Navbar link aktif */
+header .nav-link.active {
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Button kapsul */
+header .btn {
+    border-radius: 50px;
+    padding: 8px 50px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button Daftar */
+header .btn-outline-primary {
+    border: 2px solid var(--color-blue-primary);
+    background-color: transparent;
+}
+header .btn-outline-primary:hover {
+    background-color: var(--color-blue-hover);
+    border: 2px solid var(--color-blue-hover);
+}
+header .navbar .btn.btn-outline-primary:active,
+header .navbar .btn.btn-outline-primary:focus {
+    background-color: var(--color-blue-active);
+    border: 2px solid var(--color-blue-primary);
+}
+
+/* Button Masuk */
+header .btn-primary {
+    background-color: var(--color-blue-primary);
+    border: 2px solid var(--color-blue-primary);
+}
+header .btn-primary:hover {
+    background-color: var(--color-blue-hover);
+    border-color: #0d9fcf;
+}
+header .navbar .btn.btn-primary:active,
+header .navbar .btn.btn-primary:focus {
+    background-color: var(--color-blue-active);
+    border: 2px solid var(--color-blue-primary);
+}
+
+/* Responsive alignment */
+@media (max-width: 992px) {
+    header .navbar-nav {
+        text-align: center;
+        padding: 12px 0;
+    }
+    header .nav-item {
+        margin: 6px 0;
+    }
+}
+
+/* Toggler Button */
+.navbar-toggler {
+    padding: 0.4rem 0.6rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+/* Hilangkan efek active Bootstrap */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    scroll-margin-top: 90px;
+}
+
+.bg-hero {
+    background: url("/images/background-hero.png") no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.text-stroke {
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black; /* bayangan di semua sisi */
+}
+
+.btn-daftar {
+    background-color: var(--color-blue-primary);
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px; /* capsule */
+    padding: 0.75rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-daftar:hover {
+    background-color: var(--color-blue-hover);
+    color: #000;
+}
+
+/* Section About */
+.about {
+    background-color: var(--color-blue-primary);
+    scroll-margin-top: 90px;
+}
+
+.why-choose .section-title {
+    color: var(--color-blue-primary);
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.about-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive fix untuk why-choose */
+@media (max-width: 768px) {
+    #why-choose .col-md-4 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Section How It Works */
+.how-it-works {
+    background: linear-gradient(
+        to bottom,
+        var(--color-pink-primary),
+        #ffffff 50%,
+        var(--color-blue-primary)
+    );
+    scroll-margin-top: 100px;
+}
+
+.how-it-works .step-klien i {
+    color: var(--color-blue-primary);
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.how-it-works .step-freelancer i {
+    color: var(--color-pink-primary);
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.how-it-works h5 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.how-it-works p {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: black;
+}
+
+/* CTA Banner */
+.bg-primary {
+    background: linear-gradient(
+        to right,
+        var(--color-pink-primary),
+        white 99%
+);
+
+}
+
+.cta-banner p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-banner a.btn {
+    border: solid 2px var(--color-blue-hover);
+    background-color: var(--color-blue-primary);
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-banner a.btn:hover {
+    background-color: var(--color-blue-hover);
+    color: #000;
+}
+
+/* Section FAQ */
+.faq-section {
+    background: linear-gradient(to bottom, #f9f9ff, #ffffff);
+    padding: 60px 20px;
+    border-radius: 16px;
+}
+
+/* Judul FAQ */
+.faq-section {
+    scroll-margin-top: 70px;
+}
+
+.faq-section h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Accordion Styling */
+.faq-section .accordion-item {
+    border: none;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.faq-section .accordion-button {
+    background: var(--color-blue-primary);
+    font-weight: 600;
+    color: black;
+    padding: 15px 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
+}
+
+.faq-section .accordion-body {
+    background: #ffffff;
+    padding: 20px;
+    font-size: 0.95rem;
+    color: black;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+
+/* Section Footer */
+.footer-custom {
+    background: #000;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-pink-primary), var(--color-blue-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-link {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-custom a.btn {
+    background-color: var(--color-blue-primary);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-custom a.btn:hover {
+    background-color: var(--color-blue-hover);
+}
+
+.footer-custom a.btn:active,
+.footer-custom a.btn:focus {
+    background-color: var(--color-blue-active);
+}
+
+.footer-link {
+    color: var(--color-pink-primary);
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.social-link {
+    font-size: 1.4rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: var(--color-pink-primary);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+    }
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    #about {
+        text-align: center;
+    }
+}
