@@ -102,12 +102,21 @@ class JobListingController extends Controller
     {
         $this->authorize('viewApplicants', $jobListing);
 
-        $applicants = $jobListing->applications()->with('user.profile')->orderByRaw("FIELD(status, 'in_review', 'accepted', 'rejected')")->latest()->paginate(20);
+        $applicants = $jobListing->applications()
+            ->with('user.profile')
+            ->orderByRaw("CASE status
+                            WHEN 'in_review' THEN 1
+                            WHEN 'accepted' THEN 2
+                            WHEN 'rejected' THEN 3
+                            ELSE 4
+                          END")
+            ->latest()
+            ->paginate(20);
 
         foreach ($applicants as $application) {
-        $application->user->load(['applications' => function ($query) {
-            $query->where('status', 'accepted')->with('jobListing');
-        }]);
+            $application->user->load(['applications' => function ($query) {
+                $query->where('status', 'accepted')->with('jobListing');
+            }]);
         }
 
         return view('poster.jobs.applicants', compact('jobListing', 'applicants'));
@@ -123,8 +132,7 @@ class JobListingController extends Controller
             ->with('status', 'Job berhasil dihapus.');
     }
 
-    public function publicIndex(Request $request)
-    {
+    public function publicIndex(Request $request) {
         $query = JobListing::query()->whereIn('status', ['open', 'closed']);
 
         $query->when($request->q, function ($q) use ($request) {
@@ -148,10 +156,14 @@ class JobListingController extends Controller
             $q->where('budget', '<=', $request->max_budget);
         });
 
-        $jobs = $query->orderByRaw("FIELD(status, 'open', 'closed')")
-                 ->latest()
-                 ->paginate(12)
-                 ->withQueryString();
+        $jobs = $query->orderByRaw("CASE status
+                                        WHEN 'open' THEN 1
+                                        WHEN 'closed' THEN 2
+                                        ELSE 3
+                                    END")
+                     ->latest()
+                     ->paginate(12)
+                     ->withQueryString();
 
         return view('freelancer.jobs.browse', compact('jobs'));
     }
