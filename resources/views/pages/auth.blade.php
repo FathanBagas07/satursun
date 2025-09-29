@@ -121,6 +121,41 @@
         </section>
     </main>
 
+    {{-- Footer --}}
+    <footer class="footer-custom text-white py-3 bg-black">
+        <div class="container">
+            <div class="social-wrapper">
+                {{-- Social Media --}}
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <h6 class="fw-bold">Follow us on</h6>
+                    <div class="d-flex flex-wrap justify-content-center gap-4 gap-md-5">
+                        {{-- Instagram --}}
+                        <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="
+                            target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        {{-- TikTok --}}
+                        <a class="social-link" href="https://www.tiktok.com/@satursun.project?_t=ZS-8zdqoBwCjjQ&_r=1"
+                            target="_blank">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        {{-- YouTube --}}
+                        <a class="social-link" href="https://youtube.com/@satursunproject?si=1IqzQeVZPp8MPDV1"
+                            target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Copyright Notice --}}
+        <div class="my-3 text-center small text-secondary">
+            &copy; {{ date('Y') }} Satursun Freelance | Hak Cipta Dilindungi Undang-Undang
+        </div>
+        </div>
+    </footer>
+
     @push('scripts')
         <script>
             function selectRole(role) {
