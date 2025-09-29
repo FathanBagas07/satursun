@@ -45,12 +45,43 @@ header {
 
 /* === Main Style === */
 main div.container {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
-/* == Card Style == */
+/* == Section Select Role == */
 main div.card {
-    max-width: 500px;
+    border-radius: 1.5rem;
+}
+
+main div.role-card:hover {
+    transform: scale(var(--scale-up));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-all);
+}
+
+.role-card .card {
+    transition: all 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+.freelancer-card .card {
+    border: 2px solid var(--color-blue-primary);
+}
+
+.client-card .card {
+    border: 2px solid var(--color-pink-primary);
+}
+
+.role-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.freelancer-card .card .bi-briefcase-fill {
+    color: var(--color-blue-primary) !important;
+}
+
+.client-card .card .bi-person-badge-fill {
+    color: var(--color-pink-primary) !important;
 }
 
 /* === Footer Style === */

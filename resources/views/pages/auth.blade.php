@@ -24,47 +24,59 @@
     </header>
 
     {{-- Content --}}
-    <main class="container py-5">
-        {{-- STEP 1: Select Role --}}
-        <section id="step-role">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-7">
-                    <h1 class="text-center h3 fw-semibold mb-4">Pilih Peran Anda</h1>
-                    <div class="card shadow-lg border-0" style="border-radius: 1.5rem;">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="row g-4">
-                                {{-- FREELANCER --}}
-                                <div class="col-sm-6">
-                                    <div class="card role-card h-100" onclick="selectRole('freelancer')">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title fw-bold">Freelancer</h5>
-                                            <p class="card-text small">Dapatkan penghasilan dengan menawarkan jasa atau
-                                                mendaftar ke proyek yang tersedia.</p>
+    <main>
+        <div class="container">
+            {{-- Select Role --}}
+            <section id="step-role" class="select-role py-5">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8 col-lg-6">
+                        <div class="card shadow-lg border-0" max-width="600px">
+                            <h1 class="text-center h4 fw-semibold pt-3">Pilih Peran Anda</h1>
+                            <div class="card-body px-4">
+                                <div class="row g-4">
+
+                                    {{-- Freelancer Card --}}
+                                    <div class="freelancer-card role-card col-12 col-sm-6">
+                                        <div class="card role-card h-100 text-center p-3" role="button"
+                                            onclick="selectRole('freelancer')">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                                <i class="bi bi-briefcase-fill fs-1 text-primary mb-2"></i>
+                                                <h5 class="card-title fw-bold">Freelancer</h5>
+                                                <p class="card-text small">
+                                                    Dapatkan penghasilan dengan menawarkan jasa
+                                                    atau mendaftar ke proyek yang tersedia
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Client Card --}}
+                                    <div class="client-card role-card col-12 col-sm-6">
+                                        <div class="card role-card h-100 text-center p-3" role="button"
+                                            onclick="selectRole('poster')">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                                <i class="bi bi-person-badge-fill fs-1 text-success mb-2"></i>
+                                                <h5 class="card-title fw-bold">Klien</h5>
+                                                <p class="card-text small">
+                                                    Cari jasa atau freelancer yang sesuai
+                                                    untuk menyelesaikan proyek Anda
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                {{-- CLIENT / POSTER --}}
-                                <div class="col-sm-6">
-                                    <div class="card role-card h-100" onclick="selectRole('poster')">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title fw-bold">Client</h5>
-                                            <p class="card-text small">Cari jasa atau freelancer yang sesuai untuk
-                                                menyelesaikan proyek Anda.</p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                <p class="text-center small mt-4 mb-3">
+                                    Sudah punya akun ? <a href="{{ route('login') }}">Login di sini</a>
+                                </p>
                             </div>
-                            <p class="text-center small mt-4 mb-0">
-                                Sudah punya akun? <a href="{{ route('login') }}">Login di sini</a>
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        {{-- STEP 2: FORM DAFTAR --}}
-        <section id="step-register" style="display: none;">
+            {{-- STEP 2: FORM DAFTAR --}}
+            {{-- <section id="step-register" style="display: none;">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5">
                     <div class="card shadow-lg border-0" style="border-radius: 1.5rem;">
@@ -118,7 +130,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
+        </div>
     </main>
 
     {{-- Footer --}}
@@ -173,6 +186,6 @@
                     selectRole(presetRole);
                 }
             })();
-        </script>ipt>
+        </script>
     @endpush
 @endsection
