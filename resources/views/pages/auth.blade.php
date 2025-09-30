@@ -27,8 +27,19 @@
     <main>
         <div class="container">
 
-            {{-- Select Role --}}
-            @include('components.auth.register-role')
+            {{-- ================== AUTH PAGES HANDLER ================== --}}
+            {{-- Sign In Page --}}
+            @if ($page === 'sign-in')
+                @include('components.auth.sign-in-form')
+
+            {{-- Sign Up --}}
+            {{-- Role --}}
+            @elseif ($page === 'sign-up-role')
+                @include('components.auth.sign-up-role')
+            {{-- From --}}
+            @elseif ($page === 'sign-up-client')
+                @include('components.auth.sign-up-form')
+            @endif
 
             {{-- Divider --}}
 

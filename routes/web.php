@@ -10,9 +10,25 @@ use App\Http\Controllers\{
 };
 
 /* PUBLIC */
-
 Route::view('/', 'pages.landing')->name('landing');
-Route::view('/auth', 'pages.auth')->name('auth.choose');
+Route::redirect('/auth', '/auth/sign-up-role'); // Redirect route /auth to /auth/sign-up-role
+Route::prefix('auth')->name('auth.')->group(function () {
+    Route::get('sign-in', function () {
+        return view('pages.auth', ['page' => 'sign-in-form']);
+    })->name('sign-in-form');
+
+    Route::get('sign-up-role', function () {
+        return view('pages.auth', ['page' => 'sign-up-role']);
+    })->name('sign-up-role');
+
+    Route::get('sign-up/freelancer', function () {
+        return view('pages.auth', ['page' => 'sign-up-form']);
+    })->name('sign-up-freelancer');
+
+    Route::get('sign-up/client', function () {
+        return view('pages.auth', ['page' => 'sign-up-form']);
+    })->name('sign-up-client');
+});
 
 /* AUTHENTICATED */
 Route::middleware('auth')->group(function () {

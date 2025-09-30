@@ -37,7 +37,7 @@
                         @guest
                             {{-- Tombol untuk pengguna yang belum login --}}
                             <li class="nav-item text-center mt-3 mt-lg-0 ms-lg-3">
-                                <a href="{{ route('auth.choose') }}" class="btn btn-primary rounded-pill px-4 w-100">Daftar</a>
+                                <a href="{{ route('auth.sign-up-role') }}" class="btn btn-primary rounded-pill px-4 w-100">Daftar</a>
                             </li>
                             <li class="nav-item text-center mt-2 mt-lg-0 ms-lg-2">
                                 <a href="{{ route('login') }}"
@@ -153,7 +153,7 @@
                         </p>
 
                         <div class="d-flex mt-4">
-                            <a class="btn btn-daftar btn-lg" href="{{ route('auth.choose') }}">
+                            <a class="btn btn-daftar btn-lg" href="{{ route('auth.sign-up-role') }}">
                                 <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                             </a>
                         </div>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="mt-3 mt-md-0">
                     <div class="mt-3 mt-md-0">
-                        <a href="{{route('auth.choose')}}" class="btn btn-light btn-lg border-0">Mulai Proyek</a>
+                        <a href="{{route('auth.sign-up-role')}}" class="btn btn-light btn-lg border-0">Mulai Proyek</a>
                     </div>
                 </div>
             </div>
@@ -254,7 +254,7 @@
                     <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3"
                         style="max-height: 120px">
                     <h5 class="fw-bold text-gradient display-5">SIAP UNTUK <br> MEMULAI PROYEK ANDA ?</h5>
-                    <a href="{{ route('auth.choose') }}"
+                    <a href="{{ route('auth.sign-up-role') }}"
                         class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
                         <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
                     </a>
@@ -287,7 +287,7 @@
                                 <li><a href="#about" class="footer-link">Tentang</a></li>
                                 <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
                                 <li><a href="#faq" class="footer-link">FAQ</a></li>
-                                <li><a href="{{route('auth.choose')}}" class="footer-link">Daftar</a><span> / </span><a href="{{ route('login') }}"
+                                <li><a href="{{route('auth.sign-up-role')}}" class="footer-link">Daftar</a><span> / </span><a href="{{ route('login') }}"
                                         class="footer-link">Masuk</a></li>
                             </ul>
                         </div>
