@@ -342,11 +342,12 @@ header .navbar .btn.btn-primary:focus {
 .social-link {
     font-size: 1.4rem;
     color: #fff;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .social-link:hover {
     color: var(--color-pink-primary);
+    transform: scale(1.2);
 }
 
 /* Responsive */
