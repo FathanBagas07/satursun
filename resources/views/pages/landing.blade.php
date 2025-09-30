@@ -146,7 +146,7 @@
                             dan dibayar cepat
                         </p>
 
-                        <h1 class="display-5 fw-bold text-stroke">Temukan talenta pemuda/i berbakat</h1>
+                        <h1 class="display-5 fw-bold text-stroke">Temukan talenta Pemuda/i Berbakat</h1>
                         <p class="lead mt-3 text-stroke">
                             Untuk bantu bisnis/pekerjaan Anda dengan biaya terjangkau <br>
                             dan proses instan.
@@ -224,8 +224,8 @@
         <section class="cta-banner py-5 bg-primary text-white">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
                 <div>
-                    <h3 class="h4 mb-0 text-black">Siap memulai project?</h3>
-                    <p class="mb-0 text-black">Buat project atau cari talent berbakat sekarang.</p>
+                    <h3 class="h4 mb-0 text-black">Siap memulai proyek?</h3>
+                    <p class="mb-0 text-black">Buat proyek atau cari proyek berbakat sekarang.</p>
                 </div>
                 <div class="mt-3 mt-md-0">
                     <div class="mt-3 mt-md-0">
