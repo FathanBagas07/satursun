@@ -253,7 +253,7 @@
                 <div class="col-lg-4">
                     <img src="{{ asset('images/logo-footer.svg') }}" alt="Satursun Logo" class="mb-3"
                         style="max-height: 120px">
-                    <h5 class="fw-bold text-gradient display-5">READY TO <br> START A PROJECT?</h5>
+                    <h5 class="fw-bold text-gradient display-5">SIAP UNTUK <br> MEMULAI PROYEK ANDA ?</h5>
                     <a href="{{ route('auth.choose') }}"
                         class="btn btn-primary btn-lg mt-2 align-items-center rounded-pill fw-bold text-black px-4 py-3">
                         <i class="fa fa-arrow-right me-2"></i> DAFTAR SEKARANG
@@ -282,7 +282,7 @@
                 <div class="col-lg-4">
                     <div class="row">
                         <div class="col-6">
-                            <h6 class="fw-bold">Quick Links</h6>
+                            <h6 class="fw-bold">Tautan Pintas</h6>
                             <ul class="list-unstyled">
                                 <li><a href="#about" class="footer-link">Tentang</a></li>
                                 <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
@@ -293,7 +293,7 @@
                         </div>
                         <div class="col-6">
                             {{-- Media Social --}}
-                            <h6 class="fw-bold">Follow us on</h6>
+                            <h6 class="fw-bold">Ikuti kami di</h6>
                             <div class="d-flex gap-3">
                                 <a class="social-link"
                                     href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="

@@ -140,7 +140,7 @@
             <div class="social-wrapper">
                 {{-- Social Media --}}
                 <div class="d-flex flex-column align-items-center gap-2">
-                    <h6 class="fw-bold">Follow us on</h6>
+                    <h6 class="fw-bold">Ikuti kami di</h6>
                     <div class="d-flex flex-wrap justify-content-center gap-4 gap-md-5">
                         {{-- Instagram --}}
                         <a class="social-link" href="https://www.instagram.com/satursunproject?igsh=MWxyaTZlOXk3YjdyeQ=="
