@@ -12,7 +12,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 {{-- Logo --}}
-                <a class="navbar-brand d-flex align-items-center" href="{{ route('landing') }}">
+                <a class="navbar-brand d-flex align-items-center" href="#home">
                     <img src="{{ asset('images/logo.svg') }}" alt="Satursun Logo" height="60">
                 </a>
                 {{-- Navbar Tooggler --}}
@@ -136,7 +136,7 @@
 
     <main>
         {{-- Hero --}}
-        <section id="hero" class="hero text-white mb-5">
+        <section id="home" class="hero text-white mb-5">
             <div class="container">
                 <div class="row align-items-center bg-hero rounded-5">
                     <div class="col-md-8 p-5">
