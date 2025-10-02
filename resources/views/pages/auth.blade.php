@@ -16,7 +16,7 @@
             <div class="container d-flex justify-content-center align-items-center">
                 {{-- Logo --}}
                 {{-- link to landing page --}}
-                <a class="navbar-brand d-flex align-items-center" {{-- href="{{ route('landing-page') }}" --}}>
+                <a class="navbar-brand d-flex align-items-center" href="{{ route('landing-page') }}">
                     <img src="{{ asset('images/logo.svg') }}" alt="Satursun Logo">
                 </a>
             </div>

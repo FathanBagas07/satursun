@@ -10,7 +10,7 @@ use App\Http\Controllers\{
 };
 
 /* PUBLIC */
-Route::view('/', 'pages.landing')->name('landing');
+Route::view('/', 'pages.landing')->name('landing-page');
 Route::redirect('/auth', '/auth/sign-up-role'); // Redirect route /auth to /auth/sign-up-role
 Route::prefix('auth')->name('auth.')->group(function () {
     Route::get('sign-in', function () {
