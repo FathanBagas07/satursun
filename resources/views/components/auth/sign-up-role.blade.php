@@ -7,33 +7,37 @@
                     <div class="row g-4">
 
                         {{-- Freelancer Card --}}
-                        <div class="freelancer-card role-card col-12 col-sm-6">
-                            <div class="card role-card h-100 text-center p-3" role="button"
-                                onclick="selectRole('freelancer')">
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <i class="bi bi-briefcase-fill fs-1 text-primary mb-2"></i>
-                                    <h5 class="card-title fw-bold">Freelancer</h5>
-                                    <p class="card-text small">
-                                        Dapatkan penghasilan dengan menawarkan jasa
-                                        atau mendaftar ke proyek yang tersedia
-                                    </p>
+                        <div class="freelancer-card col-12 col-sm-6">
+                            <a class="role-card" href="{{ route('auth.sign-up-freelancer') }}">
+                                <div class="card role-card h-100 text-center p-3" role="button"
+                                    onclick="selectRole('freelancer')">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <i class="bi bi-briefcase-fill fs-1 text-primary mb-2"></i>
+                                        <h5 class="card-title fw-bold">Freelancer</h5>
+                                        <p class="card-text small">
+                                            Dapatkan penghasilan dengan menawarkan jasa
+                                            atau mendaftar ke proyek yang tersedia
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         {{-- Client Card --}}
-                        <div class="client-card role-card col-12 col-sm-6">
-                            <div class="card role-card h-100 text-center p-3" role="button"
-                                onclick="selectRole('poster')">
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <i class="bi bi-person-badge-fill fs-1 text-success mb-2"></i>
-                                    <h5 class="card-title fw-bold">Klien</h5>
-                                    <p class="card-text small">
-                                        Cari jasa atau freelancer yang sesuai
-                                        untuk menyelesaikan proyek Anda
-                                    </p>
+                        <div class="client-card col-12 col-sm-6">
+                            <a class="role-card" href="auth.sign-up-client">
+                                <div class="card role-card h-100 text-center p-3" role="button"
+                                    onclick="selectRole('poster')">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <i class="bi bi-person-badge-fill fs-1 text-success mb-2"></i>
+                                        <h5 class="card-title fw-bold">Klien</h5>
+                                        <p class="card-text small">
+                                            Cari jasa atau freelancer yang sesuai
+                                            untuk menyelesaikan proyek Anda
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
