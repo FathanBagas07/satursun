@@ -39,7 +39,7 @@
 
                         <p class="text-center small mt-4">
                             Belum punya akun?
-                            <a href="{{ route('auth.choose') }}">Daftar di sini</a>
+                            <a href="{{ route('auth.sign-up-role') }}">Daftar di sini</a>
                         </p>
                     </div>
                 </div>

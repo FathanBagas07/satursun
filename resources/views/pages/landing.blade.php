@@ -40,7 +40,7 @@
                                 <a href="{{ route('auth.sign-up-role') }}" class="btn btn-primary rounded-pill px-4 w-100">Daftar</a>
                             </li>
                             <li class="nav-item text-center mt-2 mt-lg-0 ms-lg-2">
-                                <a href="{{ route('login') }}"
+                                <a href="{{ route('auth.sign-in-form') }}"
                                     class="btn btn-outline-secondary rounded-pill px-4 w-100">Masuk</a>
                             </li>
                         @else
@@ -287,7 +287,7 @@
                                 <li><a href="#about" class="footer-link">Tentang</a></li>
                                 <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
                                 <li><a href="#faq" class="footer-link">FAQ</a></li>
-                                <li><a href="{{route('auth.sign-up-role')}}" class="footer-link">Daftar</a><span> / </span><a href="{{ route('login') }}"
+                                <li><a href="{{route('auth.sign-up-role')}}" class="footer-link">Daftar</a><span> / </span><a href="{{ route('auth.sign-in-form') }}"
                                         class="footer-link">Masuk</a></li>
                             </ul>
                         </div>

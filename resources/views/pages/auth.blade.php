@@ -29,7 +29,7 @@
 
             {{-- ================== AUTH PAGES HANDLER ================== --}}
             {{-- Sign In Page --}}
-            @if ($page === 'sign-in')
+            @if ($page === 'sign-in-form')
                 @include('components.auth.sign-in-form')
 
             {{-- Sign Up --}}
