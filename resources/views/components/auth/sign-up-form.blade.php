@@ -1,4 +1,4 @@
-<section id="step-register" style="display: none;">
+<section id="step-register">
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
             <div class="card shadow-lg border-0" style="border-radius: 1.5rem;">

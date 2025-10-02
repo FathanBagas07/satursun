@@ -25,7 +25,7 @@
 
                         {{-- Client Card --}}
                         <div class="client-card col-12 col-sm-6">
-                            <a class="role-card" href="auth.sign-up-client">
+                            <a class="role-card" href="{{ route('auth.sign-up-client') }}">
                                 <div class="card role-card h-100 text-center p-3" role="button"
                                     onclick="selectRole('poster')">
                                     <div class="card-body d-flex flex-column align-items-center">
@@ -42,7 +42,7 @@
                     </div>
 
                     <p class="text-center small mt-4 mb-3">
-                        Sudah punya akun ? <a href="{{ route('login') }}">Login di sini</a>
+                        Sudah punya akun ? <a href="{{ route('auth.sign-in-form') }}">Login di sini</a>
                     </p>
                 </div>
             </div>
