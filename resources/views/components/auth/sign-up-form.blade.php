@@ -8,11 +8,12 @@
                         Buat Akun Satursun
                     </h2>
 
+                    {{-- Form --}}
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <input type="hidden" id="role" name="role" value="{{ $presetRole ?? '' }}">
 
-                        {{-- Nama --}}
+                        {{-- Name --}}
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Nama Lengkap</label>
                             <input id="name" name="name" type="text" value="{{ old('name') }}"
@@ -42,7 +43,7 @@
                             @enderror
                         </div>
 
-                        {{-- Konfirmasi Password --}}
+                        {{-- Password Confirmation --}}
                         <div class="mb-4">
                             <label for="password_confirmation" class="form-label fw-semibold">Konfirmasi
                                 Password</label>
@@ -50,7 +51,7 @@
                                 class="form-control form-control-lg" required>
                         </div>
 
-                        {{-- Tombol Daftar --}}
+                        {{-- Register Button --}}
                         <div class="d-grid">
                             <button type="submit" class="btn btn-lg rounded-pill text-white fw-semibold">
                                 Daftar
@@ -58,7 +59,7 @@
                         </div>
                     </form>
 
-                    {{-- Link ke Login --}}
+                    {{-- Link To Login --}}
                     <p class="text-center small mt-4 mb-0">
                         Sudah punya akun?
                         <a href="{{ route('auth.sign-in-form') }}"
