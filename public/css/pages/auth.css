@@ -112,6 +112,34 @@ main div.role-card:hover {
     color: var(--color-pink-hover);
 }
 
+/* ==== Section Sign In Form ==== */
+.sign-in-form h2.card-title {
+    color: var(--color-pink-primary);
+}
+
+.sign-in-form .btn {
+    background-color: var(--color-blue-primary);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.sign-in-form .btn:hover {
+    background-color: var(--color-blue-hover);
+}
+.sign-in-form .btn:active,
+.sign-in-form .btn:focus {
+    background-color: var(--color-blue-active);
+}
+
+.sign-in-form a.link-sign-up {
+    color: var(--color-blue-primary);
+    transition: color 0.3s ease;
+}
+
+.sign-in-form a.link-sign-up:hover {
+    color: var(--color-pink-hover);
+}
+
 /* === Footer Style === */
 .footer-custom h6 {
     font-size: 25px;
