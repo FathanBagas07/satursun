@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <div class="col-11 col-sm-10 col-md-8 col-lg-5">
             <div class="card shadow border-0 rounded-4">
-                <div class="card-body p-4 p-md-5">
+                <div class="card-body py-3 px-4 py-md-4 px-md-5">
                     {{-- Title --}}
                     <h2 class="card-title text-center fw-bold fs-3 mb-4">
                         Buat Akun Satursun
