@@ -59,7 +59,7 @@
                         </div>
                     </form>
 
-                    {{-- Link To Login --}}
+                    {{-- Link To Sign-in --}}
                     <p class="text-center small mt-4 mb-0">
                         Sudah punya akun?
                         <a href="{{ route('auth.sign-in-form') }}"
