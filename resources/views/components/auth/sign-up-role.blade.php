@@ -42,7 +42,7 @@
                     </div>
 
                     <p class="text-center small mt-4 mb-3">
-                        Sudah punya akun ? <a href="{{ route('auth.sign-in-form') }}">Login di sini</a>
+                        Sudah punya akun ? <a href="{{ route('auth.sign-in-form') }}">Masuk di sini</a>
                     </p>
                 </div>
             </div>

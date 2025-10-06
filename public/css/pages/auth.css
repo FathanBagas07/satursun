@@ -84,6 +84,34 @@ main div.role-card:hover {
     color: var(--color-pink-primary) !important;
 }
 
+/* ===== Section sign-up-form ===== */
+.sign-up-form h2.card-title {
+    color: var(--color-pink-primary);
+}
+
+.sign-up-form .btn {
+    background-color: var(--color-blue-primary);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.sign-up-form .btn:hover {
+    background-color: var(--color-blue-hover);
+}
+.sign-up-form .btn:active,
+.sign-up-form .btn:focus {
+    background-color: var(--color-blue-active);
+}
+
+.sign-up-form a.link-login {
+    color: var(--color-blue-primary);
+    transition: color 0.3s ease;
+}
+
+.sign-up-form a.link-login:hover {
+    color: var(--color-pink-hover);
+}
+
 /* === Footer Style === */
 .footer-custom h6 {
     font-size: 25px;
