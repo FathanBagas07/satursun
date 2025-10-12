@@ -14,32 +14,47 @@ class User extends Authenticatable
     use Notifiable;
     use HasFactory;
 
-    protected $fillable = ['name','email','password','role'];
-    protected $hidden = ['password','remember_token'];
+    protected $fillable = [
+    'name',
+    'email',
+    'password',
+    'role',
+    'photo',
+    'bio'
+    ];
 
-    public function profile(): HasOne
+    protected $hidden = [
+        'password'
+    ];
+
+    public function setPasswordAttribute($value)
     {
-        return $this->hasOne(Profile::class);
+        $this->attributes['password'] = bcrypt($value);
     }
 
-    public function postedJobs(): HasMany
-    {
-        return $this->hasMany(JobListing::class, 'poster_id');
-    }
+    // public function profile(): HasOne
+    // {
+    //     return $this->hasOne(Profile::class);
+    // }
 
-    public function applications(): HasMany
-    {
-        return $this->hasMany(Application::class, 'applicant_id');
-    }
+    // public function postedJobs(): HasMany
+    // {
+    //     return $this->hasMany(JobListing::class, 'poster_id');
+    // }
 
-    public function notifications(): HasMany
-    {
-        return $this->hasMany(Notification::class);
-    }
+    // public function applications(): HasMany
+    // {
+    //     return $this->hasMany(Application::class, 'applicant_id');
+    // }
 
-    public function isPoster(): bool      { return $this->role === 'poster'; }      
-    public function isFreelancer(): bool  { return $this->role === 'freelancer'; }  
+    // public function notifications(): HasMany
+    // {
+    //     return $this->hasMany(Notification::class);
+    // }
 
-    public function scopePoster($q)     { return $q->where('role','poster'); }
-    public function scopeFreelancer($q) { return $q->where('role','freelancer'); }
+    // public function isPoster(): bool      { return $this->role === 'poster'; }      
+    // public function isFreelancer(): bool  { return $this->role === 'freelancer'; }  
+
+    // public function scopePoster($q)     { return $q->where('role','poster'); }
+    // public function scopeFreelancer($q) { return $q->where('role','freelancer'); }
 }

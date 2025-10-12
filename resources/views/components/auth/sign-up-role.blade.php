@@ -1,4 +1,4 @@
-<section id="step-role" class="select-role py-5">
+<section id="step-role" class="sign-up-role select-role py-5">
     <div class="row justify-content-center">
         <div class="col-11 col-md-8 col-lg-6">
             <div class="card shadow-lg border-0" max-width="600px">
