@@ -10,14 +10,16 @@ class NotificationComposer
 {
     public function compose(View $view)
     {
-        if (Auth::check()) {
+        if (Auth::check() && \Schema::hasTable('notifications')) {
             $notifications = Notification::where('user_id', Auth::id())
                 ->where('is_read', false)
                 ->latest()
                 ->take(5)
                 ->get();
-            
+        
             $view->with('unreadNotifications', $notifications);
+        } else {
+            $view->with('unreadNotifications', collect());
         }
     }
 }
