@@ -20928,11 +20928,6 @@ namespace Illuminate\Support\Facades {
          * @deprecated Use useOrigin
          * @static
          */
-        public static function forceRootUrl($root)
-        {
-            /** @var \Illuminate\Routing\UrlGenerator $instance */
-            $instance->forceRootUrl($root);
-        }
 
         /**
          * Set the URL origin for all generated asset URLs.
@@ -27167,7 +27162,7 @@ namespace  {
         /**
          * Merge an array of bindings into our bindings.
          *
-         * @param self $query
+         * @param \Illuminate\Database\Query\Builder $query
          * @return \Illuminate\Database\Eloquent\Builder<static>
          * @static
          */
