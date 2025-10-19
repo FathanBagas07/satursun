@@ -14,6 +14,7 @@ use App\Http\Controllers\{
 Route::view('/', 'pages.landing')->name('landing-page');
 Route::redirect('/auth', '/auth/sign-up-role');
 Route::prefix('auth')->name('auth.')->group(function () {
+    // ========= VIEW AUTH PAGES =========
     Route::get('sign-in', function () {
         return view('pages.auth', ['page' => 'sign-in-form']);
     })->name('sign-in-form');
@@ -35,10 +36,11 @@ Route::prefix('auth')->name('auth.')->group(function () {
             'presetRole' => 'client'
         ]);
     })->name('sign-up-client');
+
+    // ========= ACTION AUTH =========
+    Route::post('sign-up', [AuthController::class, 'store'])->name('sign-up-action');
 });
 
-// SIGN UP FORM
-Route::post('register', [AuthController::class, 'store'])->name('register');
 
 /* AUTHENTICATED */
 
