@@ -32,103 +32,14 @@
                         <li class="nav-item text-center text-lg-start">
                             <a class="nav-link" href="/#faq">FAQ</a>
                         </li>
-
-                        {{-- NAV RIGHT (GUEST VS AUTH) --}}
-                        @guest
-                            {{-- Tombol untuk pengguna yang belum login --}}
-                            <li class="nav-item text-center mt-3 mt-lg-0 ms-lg-3">
-                                <a href="{{ route('auth.sign-up-role') }}" class="btn btn-primary rounded-pill px-4 w-100">Daftar</a>
-                            </li>
-                            <li class="nav-item text-center mt-2 mt-lg-0 ms-lg-2">
-                                <a href="{{ route('auth.sign-in-form') }}"
-                                    class="btn btn-outline-secondary rounded-pill px-4 w-100">Masuk</a>
-                            </li>
-                        @else
-                            @auth
-                                {{-- NAVIGASI BERDASARKAN PERAN PENGGUNA --}}
-                                @if (auth()->user()->isFreelancer())
-                                    <li class="nav-item text-center text-lg-start ms-lg-3">
-                                        <a class="nav-link fw-semibold" href="{{ route('freelancer.jobs.browse') }}">Cari Tugas</a>
-                                    </li>
-                                @elseif (auth()->user()->isPoster())
-                                    <li class="nav-item text-center text-lg-start ms-lg-3">
-                                        <a class="nav-link" href="{{ route('poster.jobs.index') }}">Tugas Saya</a>
-                                    </li>
-                                    <li class="nav-item text-center mt-2 mt-lg-0 ms-lg-2">
-                                        <a href="{{ route('poster.jobs.create') }}" class="btn btn-primary rounded-pill px-4">Buat
-                                            Tugas Baru</a>
-                                    </li>
-                                @endif
-
-                                {{-- Dropdown Notifikasi --}}
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarNotificationDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="bi bi-bell-fill"></i>
-                                        @if ($unreadNotifications->count() > 0)
-                                            <span class="badge rounded-pill bg-danger">{{ $unreadNotifications->count() }}</span>
-                                        @endif
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarNotificationDropdown">
-                                        @forelse($unreadNotifications as $notification)
-                                            <li class="d-flex justify-content-between align-items-center dropdown-item-text">
-                                                <span class="small pe-2">{{ $notification->message }}</span>
-                                                {{-- Form untuk tombol hapus --}}
-                                                <form method="POST" action="{{ route('notifications.destroy', $notification) }}"
-                                                    class="ms-auto">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-sm btn-outline-danger border-0 p-0"
-                                                        title="Hapus notifikasi">
-                                                        <i class="bi bi-x-lg"></i>
-                                                    </button>
-                                                </form>
-                                            </li>
-                                        @empty
-                                            <li><span class="dropdown-item-text text-muted small">Tidak ada notifikasi baru.</span>
-                                            </li>
-                                        @endforelse
-                                    </ul>
-                                </li>
-
-                                {{-- Dropdown Profil Pengguna --}}
-                                <li class="nav-item dropdown text-center text-lg-start ms-lg-3">
-                                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center justify-content-center gap-2"
-                                        href="#" id="navbarUserDropdown" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        @php
-                                            $photo = optional(auth()->user()->profile)->photo ?? null;
-                                        @endphp
-
-                                        @if ($photo)
-                                            <img src="{{ Storage::url($photo) }}" alt="{{ auth()->user()->name }}"
-                                                class="rounded-circle" width="32" height="32" style="object-fit: cover;">
-                                        @else
-                                            <span
-                                                class="d-inline-flex justify-content-center align-items-center bg-secondary text-white rounded-circle"
-                                                style="width: 32px; height: 32px;">
-                                                <i class="bi bi-person-fill"></i>
-                                            </span>
-                                        @endif
-                                        Halo, <b>{{ auth()->user()->name }}</b>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarUserDropdown">
-                                        <li><a class="dropdown-item text-center text-lg-start"
-                                                href="{{ route('profile.edit') }}">Edit Profil</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li>
-                                            <form method="POST" action="{{ route('logout') }}" class="mb-0">
-                                                @csrf
-                                                <button type="submit"
-                                                    class="dropdown-item text-center text-lg-start">Keluar</button>
-                                            </form>
-                                        </li>
-                                    </ul>
-                                </li>
-                            @endauth
-                        @endguest
+                        <li class="nav-item text-center mt-3 mt-lg-0 ms-lg-3">
+                            <a href="{{ route('auth.sign-up-role') }}"
+                                class="btn btn-primary rounded-pill px-4 w-100">Daftar</a>
+                        </li>
+                        <li class="nav-item text-center mt-2 mt-lg-0 ms-lg-2">
+                            <a href="{{ route('auth.sign-in-form') }}"
+                                class="btn btn-outline-secondary rounded-pill px-4 w-100">Masuk</a>
+                        </li>
                     </ul>
                 </div>
         </nav>
@@ -229,7 +140,7 @@
                 </div>
                 <div class="mt-3 mt-md-0">
                     <div class="mt-3 mt-md-0">
-                        <a href="{{route('auth.sign-up-role')}}" class="btn btn-light btn-lg border-0">Mulai Proyek</a>
+                        <a href="{{ route('auth.sign-up-role') }}" class="btn btn-light btn-lg border-0">Mulai Proyek</a>
                     </div>
                 </div>
             </div>
@@ -287,8 +198,8 @@
                                 <li><a href="#about" class="footer-link">Tentang</a></li>
                                 <li><a href="#how-it-works" class="footer-link">Cara Kerja</a></li>
                                 <li><a href="#faq" class="footer-link">FAQ</a></li>
-                                <li><a href="{{route('auth.sign-up-role')}}" class="footer-link">Daftar</a><span> / </span><a href="{{ route('auth.sign-in-form') }}"
-                                        class="footer-link">Masuk</a></li>
+                                <li><a href="{{ route('auth.sign-up-role') }}" class="footer-link">Daftar</a><span> /
+                                    </span><a href="{{ route('auth.sign-in-form') }}" class="footer-link">Masuk</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
