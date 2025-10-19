@@ -39,8 +39,9 @@ Route::prefix('auth')->name('auth.')->group(function () {
 
     // ========= ACTION AUTH =========
     Route::post('sign-up', [AuthController::class, 'store'])->name('sign-up-action');
+    Route::post('sign-in', [AuthController::class, 'signIn'])->name('sign-in-action');
+    Route::post('sign-out', [AuthController::class, 'signOut'])->name('sign-out-action');
 });
-
 
 /* AUTHENTICATED */
 
