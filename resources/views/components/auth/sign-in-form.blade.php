@@ -7,7 +7,7 @@
                     <h2 class="card-title text-center fw-bold fs-3 mb-4">Masuk</h2>
 
                     {{-- Form --}}
-                    <form method="POST" action="">
+                    <form method="POST" action="{{ route('auth.sign-in-action') }}">
                         @csrf
 
                         {{-- Email --}}

@@ -13,7 +13,7 @@ use App\Http\Controllers\{
 /* PUBLIC */
 Route::view('/', 'pages.landing')->name('landing-page');
 Route::redirect('/auth', '/auth/sign-up-role');
-Route::prefix('auth')->name('auth.')->group(function () {
+Route::prefix('auth')->name('auth.')->middleware('role.redirect')->group(function () {
     // ========= VIEW AUTH PAGES =========
     Route::get('sign-in', function () {
         return view('pages.auth', ['page' => 'sign-in-form']);

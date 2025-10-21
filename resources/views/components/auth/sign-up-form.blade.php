@@ -9,7 +9,7 @@
                     </h2>
 
                     {{-- Form --}}
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('auth.sign-up-action') }}">
                         @csrf
                         <input type="hidden" id="role" name="role" value="{{ $presetRole ?? '' }}">
 

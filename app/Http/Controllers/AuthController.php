@@ -28,4 +28,33 @@ class AuthController extends Controller
             default => redirect()->route('landing-page')
         };
     }
+
+    public function signIn(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            if (Auth::user()->role === 'client') {
+                return redirect()->route('landing-page');
+            } else {
+                return redirect()->route('landing-page');
+            }
+        }
+
+        return back()->withErrors([
+            'email' => 'Email atau password salah.',
+        ])->onlyInput('email');
+    }
+
+    public function signOut(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('auth.sign-in-form');
+    }
 }
