@@ -34,6 +34,8 @@ class AuthCheckMiddleware
             if (!$request->routeIs(
                 'auth.sign-in-form',
                 'auth.sign-up-role',
+                'auth.sign-up-freelancer',
+                'auth.sign-up-client'
             )) {
                 return redirect()->route('auth.sign-in-form');
             }
