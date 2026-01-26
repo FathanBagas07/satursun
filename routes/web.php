@@ -14,7 +14,7 @@ use App\Http\Controllers\{
 Route::view('/', 'pages.landing')->name('landing-page');
 
 // AUTH PAGES
-Route::prefix('auth')->name('auth.')->middleware('auth.check')->group(function () {
+Route::prefix('auth')->name('auth.')->middleware('auth-check')->group(function () {
     // Sign in form
     Route::get('sign-in', function () {
         return view('pages.auth', ['page' => 'sign-in-form']);
