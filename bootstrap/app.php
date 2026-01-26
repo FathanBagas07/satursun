@@ -14,13 +14,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-             'role_check' => \App\Http\Middleware\RoleRedirectMiddleware::class,
+             'role_check' => \App\Http\Middleware\AuthCheckMiddleware::class,
         ]);
 
-        // (Opsional) bikin group jika mau dipakai singkat:
-        // $middleware->group('poster', ['auth', 'role:poster']);
-        // $middleware->group('freelancer', ['auth', 'role:freelancer']);
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        //
     })->create();
