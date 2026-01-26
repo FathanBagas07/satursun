@@ -10,19 +10,22 @@ use App\Http\Controllers\{
     AuthController
 };
 
-/* PUBLIC */
+// LANDING PAGE
 Route::view('/', 'pages.landing')->name('landing-page');
-Route::redirect('/auth', '/auth/sign-up-role');
-Route::prefix('auth')->name('auth.')->middleware('role.redirect')->group(function () {
-    // ========= VIEW AUTH PAGES =========
+
+// AUTH PAGES
+Route::prefix('auth')->name('auth.')->middleware('auth.check')->group(function () {
+    // Sign in form
     Route::get('sign-in', function () {
         return view('pages.auth', ['page' => 'sign-in-form']);
     })->name('sign-in-form');
 
+    // Select Role
     Route::get('sign-up-role', function () {
         return view('pages.auth', ['page' => 'sign-up-role']);
     })->name('sign-up-role');
 
+    // Sign up form - Freelancer
     Route::get('sign-up/freelancer', function () {
         return view('pages.auth', [
             'page' => 'sign-up-form',
@@ -30,6 +33,7 @@ Route::prefix('auth')->name('auth.')->middleware('role.redirect')->group(functio
         ]);
     })->name('sign-up-freelancer');
 
+    // Sign up form - Client
     Route::get('sign-up/client', function () {
         return view('pages.auth', [
             'page' => 'sign-up-form',
@@ -44,7 +48,6 @@ Route::prefix('auth')->name('auth.')->middleware('role.redirect')->group(functio
 });
 
 /* AUTHENTICATED */
-
 // Route::middleware('auth')->group(function () {
 //     Route::get('profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
 //     Route::put('profile',      [ProfileController::class, 'update'])->name('profile.update');
