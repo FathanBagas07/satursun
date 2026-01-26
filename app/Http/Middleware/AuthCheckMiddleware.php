@@ -31,7 +31,7 @@ class AuthCheckMiddleware
 
         // || USER IS NOT LOGGED IN ||
         if(!Auth::check()) {
-            if ($request->routeIs(
+            if (!$request->routeIs(
                 'auth.sign-in-form',
                 'auth.sign-up-role',
             )) {
